@@ -15,9 +15,9 @@
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="list-inline">
              <li class="list-inline-item">
-              <a class="text-color" href="mailto:{{ site.Params.email }}"><strong>{{ i18n "email" | upper }} : </strong> {{ site.Params.email }}</a></li>
-            <li class="list-inline-item">
-              <a class="text-color mr-3" href="tel:{{ site.Params.mobile }}"><strong>{{ i18n "call" | upper }} : </strong> {{ site.Params.mobile }}</a></li>
+              <a class="text-color" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+            <li class="list-inline-item"><a href="tel:{{site.Params.call }}">
+              {{ site.Params.mobile | markdownify }}</a> <small>(<a href="tel:{{site.Params.call }}">Call</a> or <a href="https://wa.me/{{site.Params.whatsapp }}" target="_blank">WhatsApp</a>)</small></li>
           </ul>
         </div>
       </div>

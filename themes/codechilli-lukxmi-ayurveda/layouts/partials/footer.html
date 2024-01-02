@@ -33,7 +33,7 @@
           <ul class="list-unstyled">
             <li class="mb-4"><a href="{{site.Params.map_location }}" target="_blank">{{site.Params.address | markdownify }}</a></li>
             <li class="mb-4">{{ site.Params.email | markdownify }}</li>
-            <li class="mb-4">{{ site.Params.mobile | markdownify }} (<a href="tel:{{site.Params.call }}">Call</a> / <a href="https://wa.me/{{site.Params.whatsapp }}" target="_blank">WhatsApp</a>)</li>
+            <li class="mb-4"><a href="tel:{{site.Params.call }}">{{ site.Params.mobile | markdownify }}</a> <small>(<a href="tel:{{site.Params.call }}">Call</a> or <a href="https://wa.me/{{site.Params.whatsapp }}" target="_blank">WhatsApp</a>)</small></li>
           </ul>
         </div>
         <!-- company -->
