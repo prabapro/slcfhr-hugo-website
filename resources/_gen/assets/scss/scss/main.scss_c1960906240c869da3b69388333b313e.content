@@ -442,6 +442,9 @@ textarea.form-control {
   width: 80%;
   max-height: fit-content; }
 
+.bg-banner {
+  background-color: #deebe980; }
+
 .top-header {
   font-size: 12px;
   transition: transform .2s ease;
@@ -452,16 +455,16 @@ textarea.form-control {
     transform-origin: top; }
 
 .navigation {
-  background: linear-gradient(to right, transparent 50%, #18978F 50%);
+  background-color: #18978F;
   transition: .2s ease; }
   @media (max-width: 991px) {
     .navigation {
-      background: #1a1a37; }
+      background: #18978F; }
       .navigation .navbar-brand {
         padding: 12px 0; } }
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #1a1a37; } }
+    background: #18978F; } }
 
 .navbar-nav {
   padding-left: 50px;
@@ -469,9 +472,9 @@ textarea.form-control {
   @media (max-width: 991px) {
     .navbar-nav {
       padding-left: 0;
-      background: #1a1a37; } }
+      background: #18978F; } }
 .nav-bg {
-  background-color: #1a1a37; }
+  background-color: #18978F; }
 
 .nav-item {
   margin: 0 15px;
@@ -566,7 +569,7 @@ link:focus,
     background: transparent; }
 
 .hero-section {
-  padding: 250px 0 290px; }
+  padding: 280px 0 290px; }
 
 .hero-slider .prevArrow,
 .hero-slider .nextArrow {
@@ -775,7 +778,7 @@ link:focus,
     .newsletter-block .form-control {
       padding-right: 25px; } }
 .bg-footer {
-  background-color: #7fe9de47; }
+  background-color: #deebe980; }
 
 .logo-footer {
   margin-top: -20px;

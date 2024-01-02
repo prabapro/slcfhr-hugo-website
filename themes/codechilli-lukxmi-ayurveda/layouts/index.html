@@ -33,14 +33,14 @@
 <!-- banner-feature -->
 {{ if $data.homepage.banner_feature.enable }}
 {{ with $data.homepage.banner_feature }}
-<section class="bg-gray overflow-md-hidden">
+<section class="bg-banner overflow-md-hidden">
   <div class="container-fluid p-0">
     <div class="row no-gutters">
       <div class="col-xl-4 col-lg-5 align-self-end">
         <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="banner-feature">
       </div>
       <div class="col-xl-8 col-lg-7">
-        <div class="row feature-blocks bg-gray justify-content-between">
+        <div class="row feature-blocks bg-white justify-content-between">
           {{ range .feature_item }}
           <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
             <i class="{{ .icon }} mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>

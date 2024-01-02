@@ -1,7 +1,7 @@
 ################################# Slider #####################################
 slider:
   enable : true
-  bg_image : "images/banner/hero-bg-temp.jpg"
+  bg_image : "images/hero/hero-bg-temp.jpg"
   slider_item:
     # slider item loop
     - title : "Your bright future is our mission"
@@ -40,27 +40,17 @@ slider:
 ############################### Banner feature ###############################
 banner_feature:
   enable : true
-  image : "images/banner/banner-feature.png"
+  image : "images/hero/hero-vector.svg"
   feature_item:
-    # feature item loop
+    # Vision Statement
     - name : "Our Vision"
-      icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+      icon : "ti-eye" # icon pack : https://themify.me/themify-icons
+      content : "<strong>SLCFHR</strong> dreams of a global facility, powered by divine blessings and support from philanthropists, organizations, and governments worldwide. We aim to expand our holistic healthcare system internationally, led by dedicated Siddha-Ayurveda experts. Join us in realizing this vision and be part of our journey to transform lives."
 
-    # feature item loop
-    - name : "Our Notice Board"
-      icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
-
-    # feature item loop
-    - name : "Our Achievements"
-      icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
-
-    # feature item loop
-    - name : "Admission Now"
-      icon : "ti-write" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+    # Mission Statement
+    - name : "Our Mission"
+      icon : "ti-target" # icon pack : https://themify.me/themify-icons
+      content : "Our mission is  <strong>Helping the Helpless</strong>, providing essential services and treatments to a broader community affected by serious illnesses. We are dedicated to enhancing facilities and expanding our skilled staff, ensuring comprehensive care for those in need."
 
 
 ############################## about ##################################
@@ -68,10 +58,7 @@ about:
   enable : true
   title : "About Educenter"
   image : "images/about/about-us.jpg"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  pariatur. Excepteur sint occaecat
-
-
-  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem "
+  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem "
   button:
     enable : true
     label : "Learn more"
