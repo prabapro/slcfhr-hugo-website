@@ -37,7 +37,7 @@ slider:
         link : "contact/"
 
 
-############################### Banner feature ###############################
+############################### Vision/Mission Statement ###############################
 banner_feature:
   enable : true
   image : "images/hero/hero-vector.svg"
@@ -53,7 +53,7 @@ banner_feature:
       content : "Our mission is  <strong>Helping the Helpless</strong>, providing essential services and treatments to a broader community affected by serious illnesses. We are dedicated to enhancing facilities and expanding our skilled staff, ensuring comprehensive care for those in need."
 
 
-############################## about ##################################
+############################## About ##################################
 about:
   enable : true
   title : "About SLCFHR"
@@ -68,6 +68,11 @@ about:
     label : "Learn more"
     link : "about/"
 
+######################## Success story #############################
+success_story:
+  enable : true
+  bg_image : "images/backgrounds/hp-video-section-bg-team.jpg"
+  video_link : "https://youtu.be/ITbIUyfY1fY"
 
 ############################# Course ################################
 course:
@@ -84,21 +89,6 @@ cta:
     enable : true
     label : "join now"
     link : "contact/"
-
-
-######################## Success story #############################
-success_story:
-  enable : true
-  bg_image : "images/backgrounds/success-story.jpg"
-  title : "Success Stories"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.
-            
-            
-  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
-  # video link
-  video_link : "https://www.youtube.com/watch?v=ResipmZmpDU"
-
 
 ############################# event ################################
 event:

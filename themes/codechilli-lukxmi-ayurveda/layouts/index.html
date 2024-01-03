@@ -122,6 +122,12 @@
   {{ end }}
   <!-- /about us -->
 
+  <!-- success story -->
+  {{ if $data.homepage.success_story.enable }}
+    {{ partial "success-story.html" . }}
+  {{ end }}
+  <!-- /success story -->
+
   <!-- courses -->
   {{ if $data.homepage.course.enable }}
     <section class="section-sm">
@@ -197,12 +203,6 @@
     {{ end }}
   {{ end }}
   <!-- /cta -->
-
-  <!-- success story -->
-  {{ if $data.homepage.success_story.enable }}
-    {{ partial "success-story.html" . }}
-  {{ end }}
-  <!-- /success story -->
 
   <!-- events -->
   {{ if $data.homepage.event.enable }}
