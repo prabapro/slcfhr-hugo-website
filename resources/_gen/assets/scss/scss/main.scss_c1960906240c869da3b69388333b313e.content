@@ -76,7 +76,7 @@ h6, .h6 {
   border: 0;
   position: relative;
   z-index: 1;
-  transition: .2s ease;
+  transition: 0.2s ease;
   overflow: hidden;
   white-space: nowrap; }
   .btn::before {
@@ -87,7 +87,7 @@ h6, .h6 {
     left: 0;
     bottom: 10%;
     z-index: -1;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     transform-origin: top;
     transform: scaleY(0); }
   .btn:active, .btn:hover, .btn.focus, .btn:focus, .btn.active {
