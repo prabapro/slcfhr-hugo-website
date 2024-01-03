@@ -56,9 +56,13 @@ banner_feature:
 ############################## about ##################################
 about:
   enable : true
-  title : "About Educenter"
-  image : "images/about/about-us.jpg"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem "
+  title : "About SLCFHR"
+  image : "images/about/dr-shiva-temp.jpg"
+  content : "<p>SLCFHR is devoted to providing compassionate care to the underprivileged sectors of Sri Lankan society, addressing a spectrum of health challenges such as partial paralysis, facial palsy, Parkinson's disease, joint pains, arthritis, autism, and cerebral palsy in children.</p>
+
+  <p>The founder of SLCFHR, <strong>Dr. P. Shivapadasundaram</strong>, affectionately known as Dr. Shiva, plays a crucial role in providing unwavering support to patients, extending his services to extremely poor senior citizens and children by offering free medicine and food. The clinic upholds a commitment to nondiscrimination, ensuring that individuals seeking treatment, regardless of age, religion, race, caste, or creed, receive comprehensive care.</p>
+
+  <p>Over the past six years, the clinic has achieved an impressive 95 percent success rate, witnessing a steady increase in the number of patients seeking outpatient and inpatient treatment. While the current capacity accommodates 15 inpatients at a time, the overwhelming demand often results in a waiting list, highlighting the critical need for expanded resources and support.</p>"
   button:
     enable : true
     label : "Learn more"
