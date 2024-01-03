@@ -60,9 +60,7 @@ about:
   image : "images/about/dr-shiva-temp.jpg"
   content : "<p>SLCFHR is devoted to providing compassionate care to the underprivileged sectors of Sri Lankan society, addressing a spectrum of health challenges such as partial paralysis, facial palsy, Parkinson's disease, joint pains, arthritis, autism, and cerebral palsy in children.</p>
 
-  <p>The founder of SLCFHR, <strong>Dr. P. Shivapadasundaram</strong>, affectionately known as Dr. Shiva, plays a crucial role in providing unwavering support to patients, extending his services to extremely poor senior citizens and children by offering free medicine and food. The clinic upholds a commitment to nondiscrimination, ensuring that individuals seeking treatment, regardless of age, religion, race, caste, or creed, receive comprehensive care.</p>
-
-  <p>Over the past six years, the clinic has achieved an impressive 95 percent success rate, witnessing a steady increase in the number of patients seeking outpatient and inpatient treatment. While the current capacity accommodates 15 inpatients at a time, the overwhelming demand often results in a waiting list, highlighting the critical need for expanded resources and support.</p>"
+  <p>The founder of SLCFHR, <strong>Dr. P. Shivapadasundaram</strong>, affectionately known as Dr. Shiva, plays a crucial role in providing unwavering support to patients, extending his services to extremely poor senior citizens and children by offering free medicine and food. The clinic upholds a commitment to nondiscrimination, ensuring that individuals seeking treatment, regardless of age, religion, race, caste, or creed, receive comprehensive care.</p>"
   button:
     enable : true
     label : "Learn more"
@@ -74,12 +72,6 @@ success_story:
   bg_image : "images/backgrounds/hp-video-section-bg-team.jpg"
   video_link : "https://youtu.be/ITbIUyfY1fY"
 
-############################# Course ################################
-course:
-  enable : true
-  title : "Our Course"
-  # course item comes from "content/**/course" folder.
-
 ########################## Call to action ############################
 cta:
   enable : true
@@ -90,39 +82,14 @@ cta:
     label : "join now"
     link : "contact/"
 
-############################# event ################################
+############################# Events ################################
 event:
   enable : true
-  title : "Upcoming Events"
+  title : "Events"
   # event item comes from "content/**/event" folder.
 
-  
-########################### funfacts ############################
-funfacts:
-  enable : true
-  funfact_item:
-    # funfact item loop
-    - name : "TEACHERS"
-      count : "60"
-
-    # funfact item loop
-    - name : "COURSES"
-      count : "50"
-
-    # funfact item loop
-    - name : "STUDENTS"
-      count : "1000"
-
-    # funfact item loop
-    - name : "SATISFIED CLIENT"
-      count : "1400"
-
-# funfact is for about page
-
-
-
-############################# blog ################################
+############################# Blog ################################
 blog:
   enable : true
-  title : "Latest News"
+  title : "Latest Blogs"
   # blog item comes from "content/**/blog" folder.
