@@ -30,12 +30,13 @@ function initMap() {
 	map.mapTypes.set('grey', mapType);
 	map.setMapTypeId('grey');
 	var marker_image = mapMarker;
-	var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(37, 55));
+	var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(30, 45));
 	marker = new google.maps.Marker({
 		position: kelanitissa,
 		map: map,
 		icon: pinIcon,
 		title: mapMarkerName,
+		label: 'SLCFHR',
 	});
 }
 var map = document.getElementById('map_canvas');
