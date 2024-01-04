@@ -2,7 +2,7 @@
 # Docs: https://docs.gethugothemes.com/educenter/
 
 ######################## default configuration ####################
-baseURL = "https://praba-slcfhr.netlify.app/"
+baseURL = "https://slcfhr.nfapps.prabapro.me/"
 title = "SLCFHR - Helping the helpless!"
 theme = "codechilli-lukxmi-ayurveda"
 timeZone = "Asia/Colombo"
