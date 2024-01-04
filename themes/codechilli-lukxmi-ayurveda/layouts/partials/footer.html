@@ -160,7 +160,10 @@
 
 {{ "<!-- Google Map API -->" | safeHTML }}
 {{ with site.Params.map.gmap_api }}
-  <script src="https://maps.googleapis.com/maps/api/js?key={{ . }}&libraries=places"></script>
+  <script
+    async="false"
+    type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key={{ . }}&libraries=places&callback=initMap"></script>
 {{ end }}
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range

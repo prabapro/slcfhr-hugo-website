@@ -1,6 +1,6 @@
 window.marker = null;
 
-function initialize() {
+function initMap() {
 	var map;
 	var latitude = $('#map_canvas').attr('data-latitude');
 	var longitude = $('#map_canvas').attr('data-longitude');
@@ -40,5 +40,7 @@ function initialize() {
 }
 var map = document.getElementById('map_canvas');
 if (map != null) {
-	google.maps.event.addDomListener(window, 'load', initialize);
+	window.addEventListener('load', (event) => {
+		initMap();
+	});
 }
