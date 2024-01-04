@@ -20,20 +20,10 @@ disqusShortname = "" # we use disqus to show comments in blog posts . To install
 disableLanguages = [] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
-############################# Netlify Build ##############################
+############################# Build ##############################
 [build]
-  publish = "public"
-  command = "hugo --gc --minify"
-  noJSConfigInAssets = false
-  useResourceCacheWhen = 'fallback'
-
-  [build.environment]
-    HUGO_VERSION = "0.121.1"
-
-[context.production.environment]
-  HUGO_ENV           = "production"
-  HUGO_ENABLEGITINFO = "true"
-
+noJSConfigInAssets = false
+useResourceCacheWhen = 'fallback'
 [build.buildStats]
 enable = true
 [[build.cachebusters]]
