@@ -672,7 +672,8 @@ link:focus,
   width: 80px;
   border-radius: 50%;
   background: #e96479;
-  outline: 15px solid #fff;
+  outline: 5px solid;
+  outline-offset: 5px;
   color: #fff;
   font-size: 40px;
   text-align: center; }

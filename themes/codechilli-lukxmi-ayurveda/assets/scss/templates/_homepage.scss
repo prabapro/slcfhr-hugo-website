@@ -80,7 +80,8 @@
   width: 80px;
   border-radius: 50%;
   background: $primary-color;
-  outline: 15px solid #fff;
+  outline: 5px solid;
+  outline-offset: 5px;
   color: $white;
   font-size: 40px;
   text-align: center;
