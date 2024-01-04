@@ -80,8 +80,9 @@
   width: 80px;
   border-radius: 50%;
   background: $primary-color;
+  outline: 15px solid #fff;
   color: $white;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
 
   i {
@@ -223,7 +224,7 @@
 }
 
 .bg-footer {
-  background-color: $light-green;
+  background-color: $background-light;
 }
 
 .logo-footer {
@@ -232,7 +233,7 @@
 }
 
 .footer {
-  border-color: #378c8438 !important;
+  border-color: #bbbbbb4e !important;
   padding-top: 275px;
   color: $secondary-color;
   a {
@@ -245,7 +246,7 @@
 }
 
 .copyright p {
-  color: #8996a7;
+  color: $text-color-dark;
   text-transform: capitalize;
 }
 
