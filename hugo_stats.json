@@ -114,10 +114,6 @@
       "d-none",
       "d-sm-block",
       "d-sm-none",
-      "dropdown",
-      "dropdown-item",
-      "dropdown-menu",
-      "dropdown-toggle",
       "feature-blocks",
       "feature-icon",
       "filter-controls",
@@ -231,8 +227,6 @@
       "section-sm",
       "section-title",
       "shadow-lg",
-      "shadow-sm",
-      "shadow=sm",
       "social-link",
       "success-video",
       "tag-list",
@@ -279,7 +273,6 @@
       "top-hider",
       "venobox",
       "vertical-align-middle",
-      "vision-mission",
       "w-100"
     ],
     "ids": [
