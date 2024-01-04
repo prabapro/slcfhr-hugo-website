@@ -137,6 +137,7 @@
       "icon-md",
       "img-fluid",
       "input-wrapper",
+      "invalid-feedback",
       "justify-content-between",
       "justify-content-center",
       "list-inline",
@@ -186,6 +187,7 @@
       "navbar-toggler",
       "navbar-toggler-icon",
       "navigation",
+      "needs-validation",
       "newsletter",
       "newsletter-block",
       "no-gutters",
@@ -283,6 +285,7 @@
       "about-notice",
       "about-our-journy",
       "about-research",
+      "bot-field",
       "fees-and-funding",
       "how-to-apply",
       "js-cookie-box",
@@ -296,7 +299,6 @@
       "requirements",
       "scholarships-news",
       "section-11033-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
-      "subject",
       "the-standard-lorem-ipsum-passage-used-since-the-1500s"
     ]
   }

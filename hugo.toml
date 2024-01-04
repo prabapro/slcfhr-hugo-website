@@ -108,9 +108,6 @@ whatsapp = "94766266332"
 email = "reach@lakxmiayurveda.lk"
 map_location = "https://maps.app.goo.gl/V8WJndskCJixqWd97"
 
-# Form Action
-contact_form_action = "#" # contact form works with https://formspree.io
-
 # Google Tag Manager
 google_tag_manager = "GTM-NC2T6MN"
 
