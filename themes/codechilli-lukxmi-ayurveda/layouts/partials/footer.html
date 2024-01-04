@@ -46,8 +46,8 @@
   <div class="footer bg-footer section border-bottom">
     <div class="container">
       <div class="row">
+        <!-- Logo & Contact Details -->
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0 text-lg-left text-center">
-          <!-- logo -->
           <a class="logo-footer" href="{{ site.BaseURL | relLangURL }}">
             <img
               class="img-fluid mb-4 mt-2 logo"
@@ -79,9 +79,9 @@
             </li>
           </ul>
         </div>
-        <!-- company -->
+        <!-- SLCFHR -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="mb-5 text-uppercase">{{ i18n "company" }}</h4>
+          <h4 class="mb-5 text-uppercase text-muted">SLCFHR</h4>
           <ul class="list-unstyled">
             {{ range site.Menus.main }}
               {{ if not .HasChildren }}
@@ -96,7 +96,7 @@
         </div>
         <!-- links -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="mb-5 text-uppercase">{{ i18n "links" }}</h4>
+          <h4 class="mb-5 text-uppercase text-muted">Links</h4>
           <ul class="list-unstyled">
             {{ range site.Menus.footer }}
               <li class="mb-3">
@@ -109,9 +109,9 @@
         </div>
         <!-- support -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="mb-5 text-uppercase">{{ i18n "courses" }}</h4>
+          <h4 class="mb-5 text-uppercase text-muted">Posts</h4>
           <ul class="list-unstyled">
-            {{ range first 5 (where site.RegularPages "Type" "course") }}
+            {{ range first 3 (where site.RegularPages "Type" "post") }}
               <li class="mb-3">
                 <a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a>
               </li>
@@ -120,9 +120,9 @@
         </div>
         <!-- support -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="mb-5 text-uppercase">{{ i18n "new_notice" }}</h4>
+          <h4 class="mb-5 text-uppercase text-muted">Events</h4>
           <ul class="list-unstyled">
-            {{ range first 3 (where site.RegularPages "Type" "notice") }}
+            {{ range first 3 (where site.RegularPages "Type" "event") }}
               <li class="mb-3">
                 <a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a>
               </li>
