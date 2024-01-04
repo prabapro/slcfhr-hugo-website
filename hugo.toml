@@ -2,7 +2,7 @@
 # Docs: https://docs.gethugothemes.com/educenter/
 
 ######################## default configuration ####################
-baseURL = "http://localhost:1313/"
+baseURL = "https://praba-slcfhr.netlify.app/"
 title = "SLCFHR - Helping the helpless!"
 theme = "codechilli-lukxmi-ayurveda"
 timeZone = "Asia/Colombo"
@@ -22,8 +22,18 @@ hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/K
 
 ############################# Build ##############################
 [build]
-noJSConfigInAssets = false
-useResourceCacheWhen = 'fallback'
+    publish = "public"
+    command = "hugo --gc --minify"
+    noJSConfigInAssets = false
+    useResourceCacheWhen = 'fallback'
+
+[build.environment]
+    HUGO_VERSION = "0.121.1"
+
+[context.production.environment]
+  HUGO_ENV           = "production"
+  HUGO_ENABLEGITINFO = "true"
+
 [build.buildStats]
 enable = true
 [[build.cachebusters]]
@@ -35,7 +45,6 @@ target = '(css|styles|scss|sass)'
 [[build.cachebusters]]
 source = 'assets/.*\.(.*)$'
 target = '$1'
-
 
 ############################# Outputs ##############################
 [outputs]
