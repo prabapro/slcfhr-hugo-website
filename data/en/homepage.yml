@@ -4,36 +4,36 @@ slider:
   bg_image : "images/hero/hero-bg-temp.jpg"
   slider_item:
     # slider item loop
-    - title : "Your bright future is our mission"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer"
+    - title : "Join us in helping the helpless thrive"
+      content : ""
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
         enable : true
-        label : "Apply now"
-        link : "contact/"
+        label : "Donate Now"
+        link : "donate/"
 
     # slider item loop
-    - title : "Your bright future is our mission"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer"
+    - title : "Every Donation Creates Opportunities"
+      content : ""
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
         enable : true
-        label : "Apply now"
-        link : "contact/"
+        label : "Donate Now"
+        link : "donate/"
 
     # slider item loop
-    - title : "Your bright future is our mission"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer"
+    - title : "Let's make the difference together"
+      content : ""
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
         enable : true
-        label : "Apply now"
+        label : "Get in touch"
         link : "contact/"
 
 
@@ -75,17 +75,17 @@ success_story:
 ########################## Call to action ############################
 cta:
   enable : true
-  subtitle : "Click to Join the Advance Workshop"
-  title : "Training In Advannce Networking"
+  subtitle : "Every Donation Creates Opportunities"
+  title : "Join us in helping the helpless thrive"
   button:
     enable : true
-    label : "join now"
-    link : "contact/"
+    label : "Donate now"
+    link : "donate/"
 
 ############################# Events ################################
 event:
   enable : true
-  title : "Events"
+  title : "Upcoming Events"
   # event item comes from "content/**/event" folder.
 
 ############################# Blog ################################

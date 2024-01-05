@@ -36,7 +36,7 @@
                     {{ if .button.enable }}
                       <a
                         href="{{ .button.link | absLangURL }}"
-                        class="btn btn-primary"
+                        class="btn btn-primary text-uppercase font-weight-bold rounded-lg shadow-lg"
                         data-animation-out="fadeOut{{ .animation_out | title }}"
                         data-delay-out="5"
                         data-duration-in=".3"
@@ -136,19 +136,21 @@
   <!-- cta -->
   {{ if $data.homepage.cta.enable }}
     {{ with $data.homepage.cta }}
-      <section class="section bg-primary">
+      <section class="section bg-cta">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
-              <h6 class="text-white font-secondary mb-0">
+              <h3 class="text-white mb-3">
                 {{ .subtitle | markdownify }}
-              </h6>
-              <h2 class="section-title text-white">
+              </h3>
+              <h2 class="section-title text-white text-uppercase">
                 {{ .title | markdownify }}
               </h2>
               {{ if .button.enable }}
                 {{ with .button }}
-                  <a href="{{ .link | absLangURL }}" class="btn btn-light">
+                  <a
+                    href="{{ .link | absLangURL }}"
+                    class="btn btn-light btn-lg font-weight-bold text-uppercase shadow-lg rounded-lg">
                     {{ .label }}
                   </a>
                 {{ end }}

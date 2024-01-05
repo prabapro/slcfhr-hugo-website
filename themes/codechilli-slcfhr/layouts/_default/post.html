@@ -1,8 +1,10 @@
 <article class="card rounded-lg border-primary hover-shadow">
-  <img
-    class="card-img-top rounded-0"
-    src="{{ .Params.image | relURL }}"
-    alt="{{ .Title }}" />
+  <a href="{{ .Permalink }}">
+    <img
+      class="card-img-top rounded-0"
+      src="{{ .Params.image | relURL }}"
+      alt="{{ .Title }}" />
+  </a>
   <div class="card-body">
     <!-- post meta -->
     <ul class="list-inline mb-3">

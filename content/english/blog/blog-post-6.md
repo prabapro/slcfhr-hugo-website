@@ -3,7 +3,7 @@ title: "Empathy in Action: Stories of Humanitarian Efforts"
 date: 2024-01-05T15:27:17+05:30
 draft: false
 # meta description
-description: "Witness the power of empathy in action through inspiring humanitarian efforts. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description: "Witness the power of empathy in action through inspiring humanitarian efforts."
 # post thumbnail
 image: "images/backgrounds/placeholder-purple.png"
 # post author
