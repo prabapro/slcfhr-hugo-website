@@ -3,9 +3,6 @@
   <section class="section-sm">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h2 class="section-title">{{ .Title }}</h2>
-        </div>
         <!-- event image -->
         <div class="col-12 mb-4">
           <img
@@ -33,7 +30,7 @@
                 <i class="ti-calendar text-primary icon-md mr-2"></i>
                 <div class="text-left">
                   <h6 class="mb-0">{{ i18n "date" | upper }}</h6>
-                  <p class="mb-0">{{ .Date.Format "2006, Jan 02" }}</p>
+                  <p class="mb-0">{{ .Date.Format "Monday, Jan 02, 2006" }}</p>
                 </div>
               </div>
             </li>
