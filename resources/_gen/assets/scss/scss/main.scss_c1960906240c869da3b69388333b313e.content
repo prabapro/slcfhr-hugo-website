@@ -317,7 +317,16 @@ a h4:hover {
 
 /* page title */
 .page-title-section {
-  padding: 200px 0 80px; }
+  padding: 200px 0 40px;
+  background-color: #e0e0eac3; }
+
+.gradient-heading {
+  text-transform: uppercase;
+  color: transparent;
+  background-size: cover;
+  background: linear-gradient(to top left, #f093fb, #f5576c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .custom-breadcrumb li.nasted {
   position: relative;

@@ -1,11 +1,9 @@
 <!-- page title -->
-<section
-  class="page-title-section overlay"
-  style="background-image: url('{{ .Params.Bg_image | relURL }}'),url('{{ `images/backgrounds/page-title.jpg`| relURL }}');">
+<section class="page-title-section">
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <ul class="list-inline custom-breadcrumb">
+        <!-- <ul class="list-inline custom-breadcrumb">
           <li class="list-inline-item h2">
             <a
               class="text-primary font-secondary"
@@ -19,8 +17,11 @@
           <li class="list-inline-item text-white h3 font-secondary">
             {{ .Title }}
           </li>
-        </ul>
-        <p class="text-lighten">{{ .Params.Description | markdownify }}</p>
+        </ul> -->
+        <h1 class="gradient-heading">{{ .Title }}</h1>
+        <p class="text-dark">
+          {{ .Params.Description | markdownify }}
+        </p>
       </div>
     </div>
   </div>
