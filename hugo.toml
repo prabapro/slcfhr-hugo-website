@@ -4,7 +4,7 @@
 ######################## default configuration ####################
 baseURL = "https://slcfhr.nfapps.prabapro.me/"
 title = "SLCFHR - Helping the helpless!"
-theme = "codechilli-lukxmi-ayurveda"
+theme = "codechilli-slcfhr"
 timeZone = "Asia/Colombo"
 
 # Post Pagination
