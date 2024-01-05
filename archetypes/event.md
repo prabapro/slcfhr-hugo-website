@@ -1,11 +1,13 @@
 ---
 title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 date: "{{ .Date }}"
-type: "post"
-image: "images/backgrounds/placeholder-purple.png"
+type: "event"
+image: "images/backgrounds/placeholder-green.png"
 author: "Praba"
 description: "[REPLACE THIS]"
-categories: []
-tags: []
+location: "[REPLACE THIS]"
 draft: true
+
 ---
+
+### About Event
