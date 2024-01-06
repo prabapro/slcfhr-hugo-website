@@ -1,6 +1,7 @@
 ---
 title: "Jacke Mastio"
 draft: false
+order: 5
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
@@ -8,7 +9,7 @@ description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 # team portrait
 image: "images/team/_placeholder.png"
 # course
-course: "Computer Science"
+designation: "Computer Science"
 # biography
 bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
 # interest

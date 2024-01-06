@@ -3,12 +3,13 @@ title: "Devid Luis"
 draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
+order: 2
 # meta description
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
 # team portrait
 image: "images/team/_placeholder.png"
 # course
-course: "Humanities"
+designation: "Humanities"
 # biography
 bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
 # interest

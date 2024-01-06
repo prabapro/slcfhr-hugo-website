@@ -1,12 +1,10 @@
 ---
-title: "Alex Rook"
+title: "Dr.Shiva"
 draft: false
-# meta description
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-# team portrait
 image: "images/team/_placeholder.png"
-# course
-course: "Vlogging"
+designation: "Founder & CEO"
+description: "Founder & CEO"
+order: 1
 # biography
 bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
 # interest
@@ -39,21 +37,9 @@ contact:
     icon: "ti-skype" # icon pack : https://themify.me/themify-icons
     link: "#"
 
-  # contact item loop
-  - name: "clarkmalik.com"
-    icon: "ti-world" # icon pack : https://themify.me/themify-icons
-    link: "#"
-
-  # contact item loop
-  - name: "1313 Boulevard Cremazie,Quebec"
-    icon: "ti-location-pin" # icon pack : https://themify.me/themify-icons
-    link: "#"
-
 # type
 type: "team"
 ---
-
-### About Me
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.

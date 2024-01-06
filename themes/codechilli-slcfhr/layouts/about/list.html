@@ -21,6 +21,26 @@
   <!-- /about -->
 
   <!-- Team -->
+  <!-- {{ if $data.homepage.blog.enable }}
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">The Team</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          {{ range first 3 (where site.RegularPages "Type" "team") }}
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+              {{ .Render "team" }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+   -->
+
   {{ if $data.homepage.blog.enable }}
     <section class="section">
       <div class="container">
@@ -31,7 +51,14 @@
         </div>
         <div class="row justify-content-center">
           <!-- Team -->
-          {{ range first 3 (where site.RegularPages "Type" "team") }}
+          {{ $teamPages := slice }}
+          {{ range site.RegularPages }}
+            {{ if eq .Type "team" }}
+              {{ $teamPages = $teamPages | append . }}
+            {{ end }}
+          {{ end }}
+          {{ $sortedTeamPages := sort $teamPages "Params.Order" }}
+          {{ range first 3 $sortedTeamPages }}
             <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
               {{ .Render "team" }}
             </div>
@@ -40,5 +67,7 @@
       </div>
     </section>
   {{ end }}
+
+
   <!-- /Team -->
 {{ end }}
