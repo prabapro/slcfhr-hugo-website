@@ -424,3 +424,14 @@ textarea.form-control {
 .bg-cta {
   background-image: linear-gradient(to top right, #f77062 0%, #fe5196 100%);
 }
+
+.contact-info {
+  i {
+    font-size: 2.75rem;
+    color: $primary-color;
+    background-size: cover;
+    background: linear-gradient(to bottom left, #f093fb, #f5576c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

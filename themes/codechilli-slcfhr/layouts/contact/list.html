@@ -8,6 +8,7 @@
         </div>
       </div>
       <div class="row">
+        <!-- Form -->
         <div class="col-lg-7 mb-4 mb-lg-0">
           <form
             action="/contact-success"
@@ -46,18 +47,47 @@
             </button>
           </form>
         </div>
-        <div class="col-lg-5 content">
-          {{ .Content }}
-          <a href="tel:{{ site.Params.mobile }}" class="text-color h5 d-block">
-            {{ site.Params.mobile }}
-          </a>
-          <a
-            href="mailto:{{ site.Params.email }}"
-            class="mb-5 text-color h5 d-block">
-            {{ site.Params.email }}
-          </a>
-          <p>{{ site.Params.address | markdownify }}</p>
+        <!-- /Form -->
+
+        <!-- Contact Details -->
+        <div class="col-lg-5 mt-5 mt-lg-0">
+          <div class="text-center">
+            <div class="list-unstyled mb-4 contact-info">
+              <li class="mb-5">
+                <i class="ti-email"></i>
+                <a href="mailto:{{ site.Params.email }}" class="mt-3 d-block">
+                  {{ site.Params.email }}
+                </a>
+              </li>
+
+              <li class="mb-5">
+                <i class="ti-mobile"></i>
+                <a href="tel:{{ site.Params.call }}" class="mt-3 d-block">
+                  {{ site.Params.mobile }}
+                </a>
+
+                <a href="tel:{{ site.Params.call }}">Call</a>
+                /
+                <a
+                  href="https://wa.me/{{ site.Params.whatsapp }}"
+                  target="_blank">
+                  WhatsApp
+                </a>
+              </li>
+
+              <li>
+                <i class="ti-location-pin"></i>
+                <a
+                  href="{{ site.Params.map_location }}"
+                  class="mt-3 d-block"
+                  target="_blank">
+                  {{ site.Params.address | markdownify }}
+                </a>
+              </li>
+            </div>
+          </div>
         </div>
+        <!-- /Contact Details -->
       </div>
     </div>
   </section>
