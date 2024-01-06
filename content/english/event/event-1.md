@@ -1,7 +1,7 @@
 ---
 title: "Empowerment through Education Symposium"
 publishDate: "2024-01-05T00:00:00Z"
-date: "2024-04-10T18:30:00+05:30"
+date: "2024-06-14T18:30:00+05:30"
 draft: false
 description: "Exploring the transformative power of education in empowering communities."
 image: "images/events/_placeholder.png"
