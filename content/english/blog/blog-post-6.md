@@ -5,7 +5,7 @@ draft: false
 # meta description
 description: "Witness the power of empathy in action through inspiring humanitarian efforts."
 # post thumbnail
-image: "images/backgrounds/placeholder-purple.png"
+image: "images/blog/_placeholder.png"
 # post author
 author: "Praba"
 # taxonomy

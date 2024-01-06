@@ -4,7 +4,7 @@ publishDate: "2024-01-05T00:00:00Z"
 date: "2024-06-15T14:00:00+05:30"
 draft: false
 description: "Discover sustainable practices and innovations shaping a greener future."
-image: "images/backgrounds/placeholder-green.png"
+image: "images/events/_placeholder.png"
 location: "Galle, Sri Lanka"
 type: "event"
 # # entry fee
@@ -16,22 +16,22 @@ type: "event"
 #   # speaker loop
 #   - name: "Jack Mastio"
 #     image: "images/event-speakers/speaker-1.jpg"
-#     designation: "Teacher"
+#     designation: "team"
 
 #   # speaker loop
 #   - name: "John Doe"
 #     image: "images/event-speakers/speaker-2.jpg"
-#     designation: "Teacher"
+#     designation: "team"
 
 #   # speaker loop
 #   - name: "Randy Luis"
 #     image: "images/event-speakers/speaker-3.jpg"
-#     designation: "Teacher"
+#     designation: "team"
 
 #   # speaker loop
 #   - name: "Alfred Jin"
 #     image: "images/event-speakers/speaker-4.jpg"
-#     designation: "Teacher"
+#     designation: "team"
 ---
 
 ### About Event

@@ -5,7 +5,7 @@ draft: false
 # meta description
 description: "Join us in building hope through philanthropy and meaningful endeavors."
 # post thumbnail
-image: "images/backgrounds/placeholder-purple.png"
+image: "images/blog/_placeholder.png"
 # post author
 author: "Praba"
 # taxonomy

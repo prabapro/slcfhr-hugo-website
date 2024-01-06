@@ -4,7 +4,7 @@ publishDate: "2024-01-05T00:00:00Z"
 date: "2024-08-05T16:45:00+05:30"
 draft: false
 description: "A celebration of diverse art forms and cultural expressions."
-image: "images/backgrounds/placeholder-green.png"
+image: "images/events/_placeholder.png"
 location: "Jaffna, Sri Lanka"
 type: "event"
 # # entry fee
@@ -16,22 +16,22 @@ type: "event"
 #   # speaker loop
 #   - name: "Jack Mastio"
 #     image: "images/event-speakers/speaker-1.jpg"
-#     designation: "Teacher"
+#     designation: "team"
 
 #   # speaker loop
 #   - name: "John Doe"
 #     image: "images/event-speakers/speaker-2.jpg"
-#     designation: "Teacher"
+#     designation: "team"
 
 #   # speaker loop
 #   - name: "Randy Luis"
 #     image: "images/event-speakers/speaker-3.jpg"
-#     designation: "Teacher"
+#     designation: "team"
 
 #   # speaker loop
 #   - name: "Alfred Jin"
 #     image: "images/event-speakers/speaker-4.jpg"
-#     designation: "Teacher"
+#     designation: "team"
 ---
 
 ### About Event

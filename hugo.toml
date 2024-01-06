@@ -188,16 +188,21 @@ weight = 2
 name = "Blog"
 url = "blog/"
 weight = 3
+
+[[Languages.en.menu.main]]
+name = "Team"
+url = "team/"
+weight = 4
   
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 4
+weight = 5
 
 [[Languages.en.menu.main]]
 name = "Donate"
 url = "donate/"
-weight = 5
+weight = 6
 
 # [[Languages.en.menu.main]]
 # weight = 6
@@ -206,8 +211,8 @@ weight = 5
 
 #   [[Languages.en.menu.main]]
 #   parent = "Pages"
-#   name = "teacher"
-#   url = "teacher/"
+#   name = "team"
+#   url = "team/"
 
 #   [[Languages.en.menu.main]]
 #   parent = "Pages"

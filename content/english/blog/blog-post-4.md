@@ -5,7 +5,7 @@ draft: false
 # meta description
 description: "Explore the impact of volunteering and the stories that unfold."
 # post thumbnail
-image: "images/backgrounds/placeholder-purple.png"
+image: "images/blog/_placeholder.png"
 # post author
 author: "Praba"
 # taxonomy

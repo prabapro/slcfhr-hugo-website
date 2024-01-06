@@ -5,7 +5,7 @@ draft: false
 # meta description
 description: "Exploring the transformative power of community-driven initiatives."
 # post thumbnail
-image: "images/backgrounds/placeholder-purple.png"
+image: "images/blog/_placeholder.png"
 # post author
 author: "Praba"
 # taxonomy

@@ -2,7 +2,7 @@
 title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 date: "{{ .Date }}"
 type: "event"
-image: "images/backgrounds/placeholder-green.png"
+image: "images/events/_placeholder.png"
 author: "Praba"
 description: "[REPLACE THIS]"
 location: "[REPLACE THIS]"

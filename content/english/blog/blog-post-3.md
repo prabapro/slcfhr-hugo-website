@@ -5,7 +5,7 @@ draft: false
 # meta description
 description: "Discover the joy of giving back and making a difference."
 # post thumbnail
-image: "images/backgrounds/placeholder-purple.png"
+image: "images/blog/_placeholder.png"
 # post author
 author: "Praba"
 # taxonomy
