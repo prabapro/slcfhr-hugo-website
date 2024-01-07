@@ -176,32 +176,32 @@ copyright = "&copy; <a href=\"/\">Siri Lakxmi Centre for Human Rehabilitation<su
 # Header Nav
 [[Languages.en.menu.main]]
 name = "About"
-url = "about/"
+pageRef = "about/"
 weight = 1
 
 [[Languages.en.menu.main]]
 name = "Events"
-url = "event/"
+pageRef = "event/"
 weight = 2
 
 [[Languages.en.menu.main]]
 name = "Blog"
-url = "blog/"
+pageRef = "blog/"
 weight = 3
 
 [[Languages.en.menu.main]]
 name = "Team"
-url = "team/"
+pageRef = "team/"
 weight = 4
   
 [[Languages.en.menu.main]]
 name = "Contact"
-url = "contact/"
+pageRef = "contact/"
 weight = 5
 
 [[Languages.en.menu.main]]
 name = "Donate"
-url = "donate/"
+pageRef = "donate/"
 weight = 6
 
 # [[Languages.en.menu.main]]
@@ -212,31 +212,31 @@ weight = 6
 #   [[Languages.en.menu.main]]
 #   parent = "Pages"
 #   name = "team"
-#   url = "team/"
+#   pageRef = "team/"
 
 #   [[Languages.en.menu.main]]
 #   parent = "Pages"
 #   name = "notice"
-#   url = "notice/"
+#   pageRef = "notice/"
 
 # footer menu
 
 [[Languages.en.menu.footer]]
 name = "Privacy Policy"
-url = "privacy-plocy/"
+pageRef = "privacy-plocy/"
 
 [[Languages.en.menu.footer]]
 name = "Terms & Conditions"
-url = "terms/"
+pageRef = "terms/"
 
 [[Languages.en.menu.footer]]
 name = "Media Releases"
-url = "media/"
+pageRef = "media/"
 
 [[Languages.en.menu.footer]]
 name = "Notice Board"
-url = "notice/"
+pageRef = "notice/"
 
 [[Languages.en.menu.footer]]
 name = "FAQ"
-url = "faq/"
+pageRef = "faq/"

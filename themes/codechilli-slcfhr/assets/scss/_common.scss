@@ -435,3 +435,28 @@ textarea.form-control {
     -webkit-text-fill-color: transparent;
   }
 }
+
+.donate-button {
+  a {
+    color: $secondary-color !important;
+    background-color: #85ffbd;
+    background-image: linear-gradient(-45deg, #85ffbd 0%, #fffb7d 100%);
+
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+    padding-top: 15px !important;
+    padding-bottom: 20px !important;
+    height: 48px;
+    border-radius: 100px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    box-shadow:
+      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: background 0.3s ease-in-out;
+  }
+
+  a:hover {
+    background-image: linear-gradient(180deg, #dfefa7 0%, #fffb7d 100%);
+  }
+}

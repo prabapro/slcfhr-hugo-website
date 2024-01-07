@@ -71,14 +71,9 @@
 
         <div class="collapse navbar-collapse text-center" id="navigation">
           <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="{{ site.BaseURL | relLangURL }}"
-                >{{ site.Params.Home }}</a
-              >
-            </li> -->
             {{ range site.Menus.main }}
               {{ if .HasChildren }}
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -95,7 +90,7 @@
                   </div>
                 </li>
               {{ else }}
-                <li class="nav-item">
+                  <li class="nav-item dropdown {{ if eq .Name "Donate"  }}donate-button{{ end }}">
                   <a class="nav-link" href="{{ .URL | absLangURL }}">
                     {{ .Name }}
                   </a>
@@ -105,7 +100,7 @@
           </ul>
 
           <!-- Language List -->
-          {{ if .IsTranslated }}
+          <!-- {{ if .IsTranslated }}
             <select
               class="m-2 border-0 mb-5 mb-lg-2"
               id="select-language"
@@ -139,8 +134,8 @@
                 {{ end }}
               {{ end }}
             </select>
-          {{ end }}
-        </div>
+          {{ end }} -->
+        </div> 
       </nav>
     </div>
   </div>
