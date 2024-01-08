@@ -1,0 +1,150 @@
+{{ define "main" }}
+  {{ $data := index site.Data site.Language.Lang }}
+
+
+  <section class="section">
+    <div class="container donation-content-pane">
+      <div class="row">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          {{ .Content }}
+          <div class="mt-4 bank-details">
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center">
+                Country
+                <span class="badge badge-light badge-pill text-monospace">
+                  {{ site.Params.bank_country }}
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center">
+                Bank Name
+                <span class="badge badge-light badge-pill text-monospace">
+                  {{ site.Params.bank_name }}
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center">
+                Branch Name
+                <span class="badge badge-light badge-pill text-monospace">
+                  {{ site.Params.bank_branch_name }}
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center">
+                Branch Code
+                <span class="badge badge-light badge-pill text-monospace">
+                  {{ site.Params.bank_branch_code }}
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center">
+                Account Name
+                <span class="badge badge-light badge-pill text-monospace">
+                  {{ site.Params.account_name }}
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center">
+                Account Number
+                <span class="badge badge-light badge-pill text-monospace">
+                  {{ site.Params.account_number }}
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center">
+                SWIFT
+                <span class="badge badge-light badge-pill text-monospace">
+                  {{ site.Params.swift_code }}
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-lg-5 mt-5 mt-lg-0 donate-contact-pane">
+          <div>
+            <div class="text-muted">
+              <h3 class="text-secondary">Contact us</h3>
+            </div>
+            <form
+              action="/contact-success"
+              method="POST"
+              name="Contact-Form"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              class="needs-validation mb-5 text-center"
+              novalidate>
+              <input type="hidden" name="bot-field" />
+
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required="true" />
+
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="mail"
+                name="email"
+                placeholder="Email"
+                required="true" />
+
+              <textarea
+                name="message"
+                id="message"
+                class="form-control mb-3"
+                placeholder="Message"></textarea>
+
+              <button type="submit" value="send" class="btn btn-primary">
+                {{ i18n "send" }}
+              </button>
+            </form>
+          </div>
+
+          <div class="text-center">
+            <div class="list-unstyled mb-4 contact-info">
+              <li class="mb-5">
+                <i class="ti-email"></i>
+                <a href="mailto:{{ site.Params.email }}" class="mt-3 d-block">
+                  {{ site.Params.email }}
+                </a>
+              </li>
+
+              <li class="mb-5">
+                <i class="ti-mobile"></i>
+                <a href="tel:{{ site.Params.call }}" class="mt-3 d-block">
+                  {{ site.Params.mobile }}
+                </a>
+
+                <a href="tel:{{ site.Params.call }}">Call</a>
+                /
+                <a
+                  href="https://wa.me/{{ site.Params.whatsapp }}"
+                  target="_blank">
+                  WhatsApp
+                </a>
+              </li>
+
+              <li>
+                <i class="ti-location-pin"></i>
+                <a
+                  href="{{ site.Params.map_location }}"
+                  class="mt-3 d-block"
+                  target="_blank">
+                  {{ site.Params.address | markdownify }}
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- /Contact Details -->
+      </div>
+    </div>
+  </section>
+  <!-- /contact -->
+{{ end }}

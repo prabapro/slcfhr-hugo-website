@@ -97,6 +97,12 @@ link = "plugins/google-map/gmap.js"
 logo_light = "images/logo-light.svg"
 logo_dark = "images/logo-dark.svg"
 
+# Top Header
+top_header = true
+
+# Google Tag Manager
+google_tag_manager = "GTM-NC2T6MN"
+
 # Meta Data
 description = "Sri Lakxmi Centre for Human Rehabilitation managed by Dr. P. Shivapadasundaram (Dr.Shiva) - Government Registration number GA-00283455"
 author = "Praba Ponnambalam"
@@ -109,11 +115,22 @@ whatsapp = "94766266332"
 email = "donate@lakxmirehab.org"
 map_location = "https://maps.app.goo.gl/V8WJndskCJixqWd97"
 
-# Google Tag Manager
-google_tag_manager = "GTM-NC2T6MN"
+# Bank Details
+bank_name = "People's Bank"
+bank_branch_name = "Wattala"
+bank_branch_code = "222"
+account_name = "Siri Lakxmi Center for Human Rehabilitation"
+account_number = "222100140039689"
+swift_code = "PSBKLKLX"
+bank_country = "Sri Lanka"
 
-# Top Header
-top_header = true
+# Google Maps
+[params.map]
+enable = true
+gmap_api = "AIzaSyD3Kp0KhTjg6jvuM1LOCZ18S7Z05WWK8TM" #6.979777816573666, 79.89603197786164
+map_latitude = "6.979777816573666"
+map_longitude = "79.89603197786164"
+map_marker = "images/marker.png" # marker size 200*300 px
 
 # Preloader
 [params.preloader]
@@ -127,14 +144,6 @@ enable = true
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
-
-# Google Maps
-[params.map]
-enable = true
-gmap_api = "AIzaSyD3Kp0KhTjg6jvuM1LOCZ18S7Z05WWK8TM" #6.979777816573666, 79.89603197786164
-map_latitude = "6.979777816573666"
-map_longitude = "79.89603197786164"
-map_marker = "images/marker.png" # marker size 200*300 px
 
 # Cookies
 [params.cookies]

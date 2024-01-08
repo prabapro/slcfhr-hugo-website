@@ -171,7 +171,7 @@
     transparent 50%,
     $primary-color 50%
   );
-  margin-bottom: -170px;
+  margin-bottom: -260px;
   position: relative;
   z-index: 1;
 
@@ -222,6 +222,10 @@
       padding-right: 25px;
     }
   }
+}
+
+.footer-main-area {
+  padding-top: 50px;
 }
 
 .bg-footer {
