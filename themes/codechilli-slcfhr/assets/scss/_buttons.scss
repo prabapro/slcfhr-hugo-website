@@ -54,6 +54,8 @@
 .btn-primary {
   color: $white;
   background-color: $primary-color;
+  border-radius: 100px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
   &::before {
     background-color: $white;
@@ -74,6 +76,8 @@
   color: $primary-color;
   background-color: transparent;
   border: 1px solid $primary-color;
+  border-radius: 100px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
   &::before {
     background-color: $white;

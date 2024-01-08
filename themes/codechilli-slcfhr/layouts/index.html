@@ -36,7 +36,7 @@
                     {{ if .button.enable }}
                       <a
                         href="{{ .button.link | absLangURL }}"
-                        class="btn btn-primary text-uppercase font-weight-bold rounded-lg shadow-lg"
+                        class="btn btn-primary text-uppercase font-weight-bold rounded-pill shadow-lg"
                         data-animation-out="fadeOut{{ .animation_out | title }}"
                         data-delay-out="5"
                         data-duration-in=".3"
@@ -150,7 +150,7 @@
                 {{ with .button }}
                   <a
                     href="{{ .link | absLangURL }}"
-                    class="btn btn-light btn-lg font-weight-bold text-uppercase shadow-lg rounded-lg">
+                    class="btn btn-light btn-lg font-weight-bold text-uppercase shadow-lg rounded-pill">
                     {{ .label }}
                   </a>
                 {{ end }}

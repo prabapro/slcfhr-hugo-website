@@ -238,7 +238,8 @@
 }
 
 .footer {
-  border-color: #bbbbbb4e !important;
+  font-size: 12px;
+  border-top: 1px solid #dddddd82;
   padding-top: 275px;
   color: $secondary-color;
   a {
@@ -253,6 +254,7 @@
 .copyright p {
   color: $text-color-dark;
   text-transform: capitalize;
+  font-size: 12px;
 }
 
 /* /footer */
