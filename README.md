@@ -1,5 +1,7 @@
 # SLCFHR
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff2f1835-13ac-4522-bed8-85cafc34a31e/deploy-status)](https://app.netlify.com/sites/praba-slcfhr/deploys)
+
 Hugo website for Siri Lakxmi Center For Human Rehabilitation (Sri Lakxmi Ayurveda)
 
 ## CLI Commands
