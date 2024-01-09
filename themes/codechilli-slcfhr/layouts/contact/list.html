@@ -11,41 +11,7 @@
 
         <!-- Contact Details -->
         <div class="col-lg-5 mt-5 mt-lg-0">
-          <div class="text-center">
-            <div class="list-unstyled mb-4 contact-info">
-              <li class="mb-5">
-                <i class="ti-email"></i>
-                <a href="mailto:{{ site.Params.email }}" class="mt-3 d-block">
-                  {{ site.Params.email }}
-                </a>
-              </li>
-
-              <li class="mb-5">
-                <i class="ti-mobile"></i>
-                <a href="tel:{{ site.Params.call }}" class="mt-3 d-block">
-                  {{ site.Params.mobile }}
-                </a>
-
-                <a href="tel:{{ site.Params.call }}">Call</a>
-                /
-                <a
-                  href="https://wa.me/{{ site.Params.whatsapp }}"
-                  target="_blank">
-                  WhatsApp
-                </a>
-              </li>
-
-              <li>
-                <i class="ti-location-pin"></i>
-                <a
-                  href="{{ site.Params.map_location }}"
-                  class="mt-3 d-block"
-                  target="_blank">
-                  {{ site.Params.address | markdownify }}
-                </a>
-              </li>
-            </div>
-          </div>
+          {{ partial "contact-details.html" }}
         </div>
         <!-- /Contact Details -->
       </div>
@@ -54,7 +20,7 @@
   <!-- /contact -->
 
   <!-- gmap -->
-  <section class="section pt-0 pb-4">
+  <section class="section pt-0 pb-0">
     <!-- Google Map -->
     <div
       id="map_canvas"
