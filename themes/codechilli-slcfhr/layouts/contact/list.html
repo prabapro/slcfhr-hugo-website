@@ -6,13 +6,13 @@
         <!-- Form -->
         <div class="col-lg-7 mb-4 mb-lg-0 text-center">
           <form
-            action="/contact-success"
             method="POST"
             name="Contact-Form"
-            data-netlify="true"
             netlify-honeypot="bot-field"
             class="needs-validation"
-            novalidate>
+            novalidate
+            netlify>
+            <input type="hidden" name="form-name" value="Contact-Form" />
             <input type="hidden" name="bot-field" />
 
             <input
@@ -127,5 +127,67 @@
         false,
       );
     })();
+  </script>
+
+  <script>
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+
+      const myForm = event.target;
+      const formData = new FormData(myForm);
+
+      // Check if the form is valid
+      if (!myForm.checkValidity()) {
+        // If the form is not valid, prevent submission and display validation errors
+        myForm.classList.add("was-validated");
+        return;
+      }
+
+      // Convert FormData to a plain object
+      const formDataObject = {};
+      formData.forEach((value, key) => {
+        formDataObject[key] = value;
+      });
+
+      try {
+        // Attempt to submit the form
+        const response = await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        });
+
+        if (response.ok) {
+          console.log("Form successfully submitted");
+
+          // Push form data to data layer
+          window.dataLayer = window.dataLayer || [];
+          dataLayer.push({
+            event: "formSubmission",
+            formData: formDataObject,
+          });
+
+          // Display success message with the person's name
+          displaySuccessMessage(myForm, formDataObject);
+        } else {
+          console.error("Error submitting form:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error.message);
+      }
+    };
+
+    const displaySuccessMessage = (form, formDataObject) => {
+      // Create a Bootstrap alert div for success message
+      const successMessage = document.createElement("div");
+      successMessage.classList.add("alert", "alert-success", "mt-3");
+      successMessage.innerHTML = `Hello <strong>${formDataObject.name}</strong>! thanks for reaching out. We'll be in touch soon.`;
+
+      // Insert the success message above the submit button
+      const submitButton = form.querySelector("button[type=submit]");
+      form.insertBefore(successMessage, submitButton);
+    };
+
+    document.querySelector("form").addEventListener("submit", handleSubmit);
   </script>
 {{ end }}
