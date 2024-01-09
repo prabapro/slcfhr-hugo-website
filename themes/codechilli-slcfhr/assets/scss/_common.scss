@@ -481,3 +481,16 @@ textarea.form-control {
   color: $primary-color;
   text-transform: uppercase;
 }
+
+/*======================
+    404 page
+=======================*/
+.page-404 {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  min-height: 200px;
+
+  img {
+    width: 75%;
+  }
+}

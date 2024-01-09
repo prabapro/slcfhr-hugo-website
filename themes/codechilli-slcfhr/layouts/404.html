@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  <title>Oops!</title>
+  {{ partial "head.html" }}
+
+  {{ partial "header.html" }}
+  <body>
+    <section class="container page-404 text-center">
+      <div class="row">
+        <div class="col-12">
+          <img
+            src="/images/backgrounds/404.gif"
+            alt="404 image"
+            class="text-center" />
+          <h3 class="text-monospace text-light">"Sorry, page not found :("</h3>
+          <a
+            href="/"
+            class="btn btn-primary mt-4 mb-4 text-uppercase shadow-lg">
+            Go back to home page
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+  {{ partial "footer.html" }}
+</html>
