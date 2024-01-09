@@ -39,6 +39,7 @@ function initMap() {
 		label: 'SLCFHR',
 	});
 }
+
 var map = document.getElementById('map_canvas');
 if (map != null) {
 	window.addEventListener('load', (event) => {
