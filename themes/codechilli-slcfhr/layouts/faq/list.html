@@ -1,0 +1,71 @@
+{{ define "main" }}
+  {{ $data := index site.Data site.Language.Lang }}
+  {{ with $data.faq }}
+    {{ $faq := $data.faq }}
+
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <div>
+              <div class="accordion" id="accordion" role="tablist">
+                {{ range $index, $item := $faq }}
+                  <div class="card border-light">
+                    <div
+                      class="card-header border-light"
+                      role="tab"
+                      id="heading-{{ add $index 1 }}">
+                      <p class="mb-0">
+                        <a
+                          data-toggle="collapse"
+                          href="#collapse-{{ add $index 1 }}"
+                          aria-expanded="false"
+                          aria-controls="collapse-{{ add $index 1 }}"
+                          class="collapsed font-weight-bold">
+                          {{ .question }}
+                        </a>
+                      </p>
+                    </div>
+                    <div
+                      id="collapse-{{ add $index 1 }}"
+                      class="collapse"
+                      role="tabpanel"
+                      aria-labelledby="heading-{{ add $index 1 }}"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="mb-0">{{ .answer }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="col-lg-5 mt-5 mt-lg-0 donate-contact-pane">
+            <div>
+              <div class="text-muted">
+                <h3 class="text-secondary text-center mb-4 text-center">
+                  Contact us
+                </h3>
+
+                <div class="text-center mb-5">
+                  {{ partial "contact-form.html" . }}
+                </div>
+              </div>
+            </div>
+
+            {{ partial "contact-details.html" }}
+          </div>
+          <!-- /Contact Details -->
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

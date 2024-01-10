@@ -92,4 +92,4 @@ event:
 blog:
   enable : true
   title : "Latest Blogs"
-  # blog item comes from "content/**/blog" folder.
+  # blog item comes from "content/**/blog" folder. 
