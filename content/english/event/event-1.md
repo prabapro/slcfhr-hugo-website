@@ -1,37 +1,14 @@
 ---
 title: "Empowerment through Education Symposium"
 publishDate: "2024-01-05T00:00:00Z"
-date: "2024-06-14T18:30:00+05:30"
+date: "2024-01-12T18:30:00+05:30"
 draft: false
 description: "Exploring the transformative power of education in empowering communities."
 image: "images/events/_placeholder.png"
 location: "Kandy, Sri Lanka"
 type: "event"
-# # entry fee
-# fee: "From: $699"
-# # apply url
-# apply_url: "#"
-# event speaker
-# speaker:
-#   # speaker loop
-#   - name: "Jack Mastio"
-#     image: "images/event-speakers/speaker-1.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "John Doe"
-#     image: "images/event-speakers/speaker-2.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "Randy Luis"
-#     image: "images/event-speakers/speaker-3.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "Alfred Jin"
-#     image: "images/event-speakers/speaker-4.jpg"
-#     designation: "team"
+event_gallery: true
+gallery_folder: "images/events/event-1" #Create the folder manually & upload images (Allowed extensions: JPG, JPEG & PNG)
 ---
 
 ### About Event
