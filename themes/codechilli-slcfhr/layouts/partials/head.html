@@ -73,4 +73,10 @@
     </script>
   {{ end }}
 
+
+  <!-- Netlify Identity for Decap CMS -->
+  {{ if .IsHome }}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {{ end }}
+
 </head>
