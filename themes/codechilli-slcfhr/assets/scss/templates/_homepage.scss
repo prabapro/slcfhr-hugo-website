@@ -147,9 +147,15 @@
   top: 0;
   left: 0;
   text-transform: uppercase;
+  border-radius: 0 0 10px 0;
 
-  span {
-    font-size: 40px;
+  .yy {
+    font-family: $primary-font;
+    font-size: 0.85em;
+  }
+
+  .dd {
+    font-size: 28px;
   }
 }
 

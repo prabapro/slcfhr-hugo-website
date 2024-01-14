@@ -7,9 +7,11 @@
         alt="{{ .Title }}" />
     </a>
     <div class="card-date">
-      <span>{{ .Date.Format "02" }}</span>
+      <span class="yy">{{ .Date.Format "2006" }}</span>
       <br />
-      {{ .Date.Format "Jan" }}
+      <span>{{ .Date.Format "Jan" }}</span>
+      <br />
+      <span class="dd">{{ .Date.Format "02" }}</span>
     </div>
   </div>
   <div class="card-body">
