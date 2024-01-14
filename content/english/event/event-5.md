@@ -1,37 +1,12 @@
 ---
 title: "Tech Innovation Expo"
-publishDate: "2024-01-05T00:00:00Z"
-date: "2024-09-20T10:30:00+05:30"
+publishDate: "2023-12-05T00:00:00Z"
+date: "2023-12-20T10:30:00+05:30"
 draft: false
 description: "Exploring the latest technological innovations shaping the future."
 image: "images/events/_placeholder.png"
 location: "Wattala, Sri Lanka"
 type: "event"
-# # entry fee
-# fee: "From: $699"
-# # apply url
-# apply_url: "#"
-# event speaker
-# speaker:
-#   # speaker loop
-#   - name: "Jack Mastio"
-#     image: "images/event-speakers/speaker-1.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "John Doe"
-#     image: "images/event-speakers/speaker-2.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "Randy Luis"
-#     image: "images/event-speakers/speaker-3.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "Alfred Jin"
-#     image: "images/event-speakers/speaker-4.jpg"
-#     designation: "team"
 ---
 
 ### About Event

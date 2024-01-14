@@ -2,10 +2,26 @@
   <!-- events -->
   <section class="section">
     <div class="container">
+      <!-- Upcoming Events -->
       <div class="row">
-        <!-- event -->
-        {{ $sortedPages := sort .Data.Pages "Date" }}
-        {{ range $sortedPages }}
+        {{ $upcomingEvents := where (where site.RegularPages "Type" "event") "Date" "ge" now }}
+        {{ $sortedEvents := sort $upcomingEvents "Date" }}
+        {{ range $sortedEvents }}
+          <div class="col-lg-4 col-sm-6 mb-5">
+            {{ .Render "event" }}
+          </div>
+        {{ end }}
+      </div>
+
+      <!-- Border -->
+      <div class="border-top border-primary mt-5"></div>
+
+      <!-- Past Events -->
+      <h2 class="text-secondary mt-5 pb-4">Past Events</h2>
+      <div class="row">
+        {{ $upcomingEvents := where (where site.RegularPages "Type" "event") "Date" "le" now }}
+        {{ $sortedEvents := sort $upcomingEvents "Date" }}
+        {{ range $sortedEvents.Reverse }}
           <div class="col-lg-4 col-sm-6 mb-5">
             {{ .Render "event" }}
           </div>
@@ -13,5 +29,4 @@
       </div>
     </div>
   </section>
-  <!-- /events -->
 {{ end }}

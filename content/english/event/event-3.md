@@ -1,7 +1,7 @@
 ---
 title: "Health and Wellness Summit"
 publishDate: "2024-01-05T00:00:00Z"
-date: "2024-04-25T12:00:00+05:30"
+date: "2024-04-06T12:00:00+05:30"
 draft: false
 description: "Explore holistic approaches to health and wellness."
 image: "images/events/_placeholder.png"
