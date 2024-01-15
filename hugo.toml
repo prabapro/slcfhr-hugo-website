@@ -94,8 +94,8 @@ link = "plugins/google-map/gmap.js"
 
 #################### Default Parameters ################################
 [params]
-logo_light = "images/logo-light.svg"
-logo_dark = "images/logo-dark.svg"
+logo_light = "images/common/logo-light.svg"
+logo_dark = "images/common/logo-dark.svg"
 
 # Top Header
 top_header = true
@@ -130,7 +130,7 @@ enable = true
 gmap_api = "AIzaSyD3Kp0KhTjg6jvuM1LOCZ18S7Z05WWK8TM" #6.979777816573666, 79.89603197786164
 map_latitude = "6.979777816573666"
 map_longitude = "79.89603197786164"
-map_marker = "images/marker.png" # marker size 200*300 px
+map_marker = "images/common/marker.png" # marker size 200*300 px
 
 # Preloader
 [params.preloader]
