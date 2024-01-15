@@ -6,6 +6,7 @@ media_folder: static/uploads # Folder where user uploaded files should go
 public_folder: uploads/img
 publish_mode: editorial_workflow
 site_url: https://slcfhr.nfapps.prabapro.me
+show_preview_links: false
 
 collections: # A list of collections the CMS should be able to edit
   - name: blog # Used in routes, ie.: /admin/collections/:slug/edit
@@ -14,8 +15,14 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     type: post
     fields: # The fields each document in this collection have
+      - { label: "Type", name: "type", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Intro Blurb", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Featured image",
+          name: "image",
+          widget: "image",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
