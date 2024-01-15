@@ -7,31 +7,6 @@ description: "Explore holistic approaches to health and wellness."
 image: "images/events/_placeholder.png"
 location: "Colombo, Sri Lanka"
 type: "event"
-# # entry fee
-# fee: "From: $699"
-# # apply url
-# apply_url: "#"
-# event speaker
-# speaker:
-#   # speaker loop
-#   - name: "Jack Mastio"
-#     image: "images/event-speakers/speaker-1.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "John Doe"
-#     image: "images/event-speakers/speaker-2.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "Randy Luis"
-#     image: "images/event-speakers/speaker-3.jpg"
-#     designation: "team"
-
-#   # speaker loop
-#   - name: "Alfred Jin"
-#     image: "images/event-speakers/speaker-4.jpg"
-#     designation: "team"
 ---
 
 ### About Event

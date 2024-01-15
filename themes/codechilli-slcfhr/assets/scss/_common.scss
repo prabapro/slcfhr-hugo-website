@@ -494,3 +494,22 @@ textarea.form-control {
     width: 75%;
   }
 }
+
+.blog-thumb {
+  max-height: 411px;
+
+  img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+}
+
+.card-blog-thumb img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.event-thumb {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}

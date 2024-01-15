@@ -9,7 +9,8 @@
             {{ $paginator := .Paginate ( where .Data.Pages "Type" "post") }}
             {{ range $paginator.Pages }}
               <div class="col-sm-6 mb-5">
-                <article class="card border-1 rounded-5 hover-shadow">
+                <article
+                  class="card border-1 rounded-5 hover-shadow card-blog-thumb">
                   <a href="{{ .Permalink }}">
                     <img
                       class="card-img-top rounded-0"
@@ -20,18 +21,18 @@
                     <!-- post meta -->
                     <ul class="list-inline mb-3">
                       <!-- post date -->
-                      <li class="list-inline-item mr-3 ml-0">
+                      <!-- <li class="list-inline-item mr-3 ml-0">
                         <i class="ti-calendar"></i>
                         {{ .PublishDate.Format "2006, Jan 02" }}
-                      </li>
+                      </li> -->
                       <!-- author -->
-                      <li class="list-inline-item mr-3 ml-0">
+                      <!-- <li class="list-inline-item mr-3 ml-0">
                         <i class="ti-user"></i>
                         <a
                           href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">
                           {{ .Params.Author | title }}
                         </a>
-                      </li>
+                      </li> -->
                     </ul>
                     <h4 class="card-title">
                       <a href="{{ .Permalink }}">{{ .Title }}</a>
