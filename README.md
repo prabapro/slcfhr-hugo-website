@@ -1,6 +1,14 @@
-# 🚀 SLCFHR
+<img src="_branding/logo-out/png/logo-transparent-primary-600x150.png" alt="SLCFHR Logo" width="300">
 
-This is the Hugo website for Siri Lakxmi Center For Human Rehabilitation.
+A Jamstack website for Siri Lakxmi Center For Human Rehabilitation (**SLCFHR**).
+
+<div style="border: 1px solid #dddddd; padding: 10px; border-radius: 5px;">
+
+- **SSG:** [Hugo](https://gohugo.io/)
+- **CMS:** [Decap CMS](https://decapcms.org/) (Formerly "Netlify CMS")
+- **Deployed on:** [Netlify](https://slcfhr.nfapps.prabapro.me)
+
+</div>
 
 ## 👨‍💻 Development Environment
 
