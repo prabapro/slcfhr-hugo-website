@@ -6,109 +6,141 @@ backend:
   branch: main
   squash_merges: true
 
-site_url: https://slcfhr.nfapps.prabapro.me
-
+site_url: "https://slcfhr.nfapps.prabapro.me"
 publish_mode: editorial_workflow
-
-media_folder: static/images/blog # Folder where user uploaded files should go
+media_folder: static/images/blog
 public_folder: /images/blog
-
 show_preview_links: true
 
 collections:
-  # ######################### BLOG #########################
+  # BLOG POSTS
   - name: blog
     label: Blog
     folder: content/english/blog
     create: true
+
     fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - {
-          label: "Featured image",
-          name: "image",
-          widget: "image",
-          choose_url: false,
-          default: "images/blog/_placeholder.png",
-          hint: "🔔 Default placeholder image will be shown once saved",
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - {
-          label: "Categories",
-          name: "categories",
-          widget: "list",
-          hint: "Comma separated list",
-          required: false,
-        }
-      - {
-          label: "Tags",
-          name: "tags",
-          widget: "list",
-          hint: "Comma separated list",
-          required: false,
-        }
-  # ######################### EVENTS #########################
+      - label: Type
+        name: type
+        widget: hidden
+        default: post
+
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Publish Date
+        name: date
+        widget: datetime
+
+      - label: Description
+        name: description
+        widget: text
+
+      - label: Featured image
+        name: image
+        widget: image
+        choose_url: false
+        default: images/blog/_placeholder.png
+        hint: "\U0001F514 Default placeholder image will be shown once saved"
+
+      - label: Body
+        name: body
+        widget: markdown
+
+      - label: Categories
+        name: categories
+        widget: list
+        hint: Comma separated list
+        required: false
+
+      - label: Tags
+        name: tags
+        widget: list
+        hint: Comma separated list
+        required: false
+
+  # EVENTS
   - name: event
     label: Event
     folder: content/english/event
     create: true
     media_folder: ../../../static/images/events
     public_folder: /images/events
+
     fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "event" }
-      - {
-          label: "Published Date",
-          name: "publishDate",
-          widget: "datetime",
-          hint: "🚀 Default date if fine. Do not modify!",
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Event Date & Time",
-          name: "date",
-          widget: "datetime",
-          picker_utc: true,
-        }
-      - { label: "Description", name: "description", widget: "text" }
-      - {
-          label: "Featured image",
-          name: "image",
-          widget: "image",
-          choose_url: false,
-          default: "images/events/_placeholder.png",
-          hint: "🔔 Default placeholder image will be shown once saved",
-        }
-      - {
-          label: "Location",
-          name: "location",
-          widget: "string",
-          default: "Colombo, Sri Lanka",
-          hint: "🔔 Eg: Colombo, Sri Lanka",
-        }
-      - {
-          label: "Event Gallery Folder",
-          name: "gallery_folder",
-          widget: "hidden",
-          default: "images/events/[FOLDER]",
-          comment: "👇 Create the folder & upload images (Allowed extensions: JPG, JPEG & PNG). Replace the path accordingly.",
-        }
-      - {
-          label: "Enable Gallery",
-          name: "event_gallery",
-          widget: "hidden",
-          default: false,
-          comment: "👇 Enable if gallery folder is defined above",
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
-  # ######################### NOTICE #########################
+      - label: Type
+        name: type
+        widget: hidden
+        default: event
+
+      - label: Published Date
+        name: publishDate
+        widget: datetime
+        hint: "\U0001F680 Default date if fine. Do not modify!"
+
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Event Date & Time
+        name: date
+        widget: datetime
+        picker_utc: true
+
+      - label: Description
+        name: description
+        widget: text
+
+      - label: Featured image
+        name: image
+        widget: image
+        choose_url: false
+        default: images/events/_placeholder.png
+        hint: "\U0001F514 Default placeholder image will be shown once saved"
+
+      - label: Location
+        name: location
+        widget: string
+        default: "Colombo, Sri Lanka"
+        hint: "\U0001F514 Eg: Colombo, Sri Lanka"
+
+      - label: Event Gallery Folder
+        name: gallery_folder
+        widget: hidden
+        default: "images/events/[REPLACE-THIS-WITH-EVENT-NAME]"
+        comment: "\U0001F447 Create the folder & upload images (Allowed extensions: JPG, JPEG & PNG). Replace the path accordingly."
+
+      - label: Enable Gallery
+        name: event_gallery
+        widget: hidden
+        default: false
+        comment: "\U0001F447 Enable if gallery folder is defined above"
+
+      - label: Body
+        name: body
+        widget: markdown
+
+  # NOTICE BOARD
   - name: notice
     label: Notice
     folder: content/english/notice
     create: true
+
     fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "notice" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: Type
+        name: type
+        widget: hidden
+        default: notice
+
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Publish Date
+        name: date
+        widget: datetime
+
+      - label: Body
+        name: body
+        widget: markdown

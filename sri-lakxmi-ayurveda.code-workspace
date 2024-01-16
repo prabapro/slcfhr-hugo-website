@@ -11,13 +11,13 @@
       {
         "splitTerminals": [
           {
-            "name": "Hugo",
-            "commands": ["hugo-serve"],
+            "name": "Decap",
+            "commands": ["npx decap-server"],
             "shouldRunCommands": false
           },
           {
-            "name": "Decap",
-            "commands": ["npx decap-server"],
+            "name": "Hugo",
+            "commands": ["hugo-serve"],
             "shouldRunCommands": false
           },
           {
@@ -27,6 +27,7 @@
           }
         ]
       }
-    ]
+    ],
+    "cSpell.words": ["datetime"]
   }
 }
