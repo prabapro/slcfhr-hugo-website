@@ -82,6 +82,9 @@ Netlify automatically monitors the GitHub repository for changes in the `main` b
 
 Keep the `netlify.toml` file updated if there are changes to the local `hugo version`. Ensure that the version specified in `netlify.toml` matches the one in your local environment before committing changes to the remote repository.
 
+**Example**: when `hugo version` returns<br>
+<code>hugo v0.121.2-6d5b44305eaa9d0a157946492a6f319da38de154+extended darwin/arm64 BuildDate=2024-01-05T12:21:15Z VendorInfo=brew</code>
+
 ```toml
 [build.environment]
   HUGO_VERSION = "0.121.2"
