@@ -1,8 +1,7 @@
 ---
 type: notice
-title: Notice 01
-date: 2023-01-16T12:14:04+05:30
-draft: true
+title: Notice 03
+date: 2024-01-16T07:36:12.833Z
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi reprehenderit delectus quod nesciunt labore error. Ratione quia quas ipsa voluptate repellendus maxime, saepe voluptatibus. Impedit magnam accusamus cumque libero facilis? Esse voluptatum rem non deleniti, impedit porro molestias voluptate eum! Sequi hic iste debitis facilis? Ut, voluptate veniam dicta nulla eaque libero mollitia laudantium at ipsam consectetur ratione ipsa iure nostrum. Mollitia nam esse optio ut possimus fugit nesciunt animi omnis, impedit repellendus, temporibus quo consectetur explicabo tempore earum asperiores itaque placeat corporis. Sed exercitationem pariatur deleniti placeat unde a iusto, autem tempora sunt neque odio incidunt. Recusandae, ipsam.
