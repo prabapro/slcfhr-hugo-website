@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .File.ContentBaseName "-" " " | title }}"
-date: "{{ .Date }}"
+publishDate: "{{ .Date }}" #Published Date
+date: "{{ .Date }}" #Event Date
 type: "event"
 image: "images/events/_placeholder.png"
 author: "Praba"

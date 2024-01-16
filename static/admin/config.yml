@@ -4,16 +4,20 @@ local_backend: true
 backend:
   name: git-gateway
   branch: main
+  squash_merges: true
+
+site_url: https://slcfhr.nfapps.prabapro.me
+
+publish_mode: editorial_workflow
 
 media_folder: static/images/blog # Folder where user uploaded files should go
 public_folder: /images/blog
-publish_mode: editorial_workflow
-site_url: https://slcfhr.nfapps.prabapro.me
+
 show_preview_links: true
 
 collections: # A list of collections the CMS should be able to edit
   - name: blog # Used in routes, ie.: /admin/collections/:slug/edit
-    label: Post # Used in the UI, ie.: "New Post"
+    label: Blog # Used in the UI, ie.: "New Post"
     folder: content/english/blog # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -25,7 +29,9 @@ collections: # A list of collections the CMS should be able to edit
           label: "Featured image",
           name: "image",
           widget: "image",
-          required: false,
+          choose_url: false,
+          default: "images/blog/_placeholder.png",
+          hint: "🔔 Default placeholder image will be shown once saved",
         }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
@@ -42,3 +48,55 @@ collections: # A list of collections the CMS should be able to edit
           hint: "Comma separated list",
           required: false,
         }
+  - name: event
+    label: Event
+    folder: content/english/event
+    create: true
+    media_folder: ../../../static/images/events
+    public_folder: /images/events
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "event" }
+      - {
+          label: "Published Date",
+          name: "publishDate",
+          widget: "datetime",
+          hint: "🚀 Default date if fine. Do not modify!",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Event Date & Time",
+          name: "date",
+          widget: "datetime",
+          picker_utc: true,
+        }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Featured image",
+          name: "image",
+          widget: "image",
+          choose_url: false,
+          default: "images/events/_placeholder.png",
+          hint: "🔔 Default placeholder image will be shown once saved",
+        }
+      - {
+          label: "Location",
+          name: "location",
+          widget: "string",
+          default: "Colombo, Sri Lanka",
+          hint: "🔔 Eg: Colombo, Sri Lanka",
+        }
+      - {
+          label: "Event Gallery Folder",
+          name: "gallery_folder",
+          widget: "hidden",
+          default: "images/events/[FOLDER]",
+          comment: "👇 Create the folder & upload images (Allowed extensions: JPG, JPEG & PNG). Replace the path accordingly.",
+        }
+      - {
+          label: "Enable Gallery",
+          name: "event_gallery",
+          widget: "hidden",
+          default: false,
+          comment: "👇 Enable if gallery folder is defined above",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
