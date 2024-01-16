@@ -72,7 +72,7 @@ npx decap-server
 1. Open `http://localhost:1313/admin` (no password required).
 1. Changes will be made to the local repository.
 
-## 🌐 Netlify Deployment
+## ![Netlify Logo](https://avatars.githubusercontent.com/in/13473?s=24) Netlify Deployment
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ff2f1835-13ac-4522-bed8-85cafc34a31e/deploy-status)](https://app.netlify.com/sites/praba-slcfhr/deploys)
 
