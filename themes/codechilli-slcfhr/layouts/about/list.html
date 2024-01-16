@@ -6,40 +6,13 @@
   <section class="section">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          {{ with .Params.image }}
-            <img
-              class="img-fluid w-100 mb-4"
-              src="{{ . | relURL }}"
-              alt="about image" />
-          {{ end }}
+        <div class="col-12  content-body">
           {{ .Content }}
         </div>
       </div>
     </div>
   </section>
   <!-- /about -->
-
-  <!-- Team -->
-  <!-- {{ if $data.homepage.blog.enable }}
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">The Team</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          {{ range first 3 (where site.RegularPages "Type" "team") }}
-            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-              {{ .Render "team" }}
-            </div>
-          {{ end }}
-        </div>
-      </div>
-    </section>
-  {{ end }}
-   -->
 
   {{ if $data.homepage.blog.enable }}
     <section class="section">
