@@ -15,12 +15,13 @@ public_folder: /images/blog
 
 show_preview_links: true
 
-collections: # A list of collections the CMS should be able to edit
-  - name: blog # Used in routes, ie.: /admin/collections/:slug/edit
-    label: Blog # Used in the UI, ie.: "New Post"
-    folder: content/english/blog # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+collections:
+  # ######################### BLOG #########################
+  - name: blog
+    label: Blog
+    folder: content/english/blog
+    create: true
+    fields:
       - { label: "Type", name: "type", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -48,6 +49,7 @@ collections: # A list of collections the CMS should be able to edit
           hint: "Comma separated list",
           required: false,
         }
+  # ######################### EVENTS #########################
   - name: event
     label: Event
     folder: content/english/event
@@ -100,6 +102,7 @@ collections: # A list of collections the CMS should be able to edit
           comment: "👇 Enable if gallery folder is defined above",
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  # ######################### NOTICE #########################
   - name: notice
     label: Notice
     folder: content/english/notice
