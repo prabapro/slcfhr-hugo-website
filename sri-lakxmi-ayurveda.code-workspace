@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "restoreTerminals.keepExistingTerminalsOpen": true,
+    "restoreTerminals.runOnStartup": true,
+    "restoreTerminals.terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "Hugo",
+            "commands": ["hugo-serve"],
+            "shouldRunCommands": false
+          },
+          {
+            "name": "Decap",
+            "commands": ["npx decap-server"],
+            "shouldRunCommands": false
+          },
+          {
+            "name": "Git",
+            "commands": ["git status"],
+            "shouldRunCommands": false
+          }
+        ]
+      }
+    ]
+  }
+}
