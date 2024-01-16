@@ -100,9 +100,6 @@ logo_dark = "images/common/logo-dark.svg"
 # Top Header
 top_header = true
 
-# Google Tag Manager
-google_tag_manager = "GTM-NC2T6MN"
-
 # Meta Data
 description = "Sri Lakxmi Centre for Human Rehabilitation managed by Dr. P. Shivapadasundaram (Dr.Shiva) - Government Registration number GA-00283455"
 author = "Praba Ponnambalam"
@@ -249,3 +246,8 @@ pageRef = "notice/"
 [[Languages.en.menu.footer]]
 name = "FAQ"
 pageRef = "faq/"
+
+# BUILT IN SERVICES
+[services]
+  [services.googleAnalytics]
+    ID = 'G-4YBHN7L1D5'

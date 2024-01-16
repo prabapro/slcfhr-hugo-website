@@ -93,14 +93,23 @@
       });
 
       if (response.ok) {
-        console.log("Form successfully submitted");
+        console.log(
+          `Form successfully submitted. Form Data: ${JSON.stringify(
+            formDataObject,
+          )}`,
+        );
+
+        // Form Submission Event to Google Analytics
+        gtag("event", "form_submit", {
+          form_name: formDataObject["form-name"],
+        });
 
         // Push form data to data layer
-        window.dataLayer = window.dataLayer || [];
-        dataLayer.push({
-          event: "formSubmission",
-          formData: formDataObject,
-        });
+        // window.dataLayer = window.dataLayer || [];
+        // dataLayer.push({
+        //   event: "formSubmission",
+        //   formData: formDataObject,
+        // });
 
         // Display success message with the person's name
         displaySuccessMessage(myForm, formDataObject);
