@@ -13,12 +13,12 @@
           {
             "name": "Decap",
             "commands": ["npx decap-server"],
-            "shouldRunCommands": false
+            "shouldRunCommands": true
           },
           {
             "name": "Hugo",
             "commands": ["hugo-serve"],
-            "shouldRunCommands": false
+            "shouldRunCommands": true
           },
           {
             "name": "Git",
