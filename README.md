@@ -1,4 +1,4 @@
-# SLCFHR
+# 🚀 SLCFHR
 
 <img src="_branding/logo-out/png/logo-transparent-primary-600x150.png" alt="SLCFHR Logo" width="300">
 
