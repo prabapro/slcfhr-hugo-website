@@ -5,7 +5,7 @@
     }
   ],
   "settings": {
-    "restoreTerminals.keepExistingTerminalsOpen": true,
+    "restoreTerminals.keepExistingTerminalsOpen": false,
     "restoreTerminals.runOnStartup": true,
     "restoreTerminals.terminals": [
       {
