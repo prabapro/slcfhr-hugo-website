@@ -97,6 +97,11 @@ link = "plugins/google-map/gmap.js"
 logo_light = "images/common/logo-light.svg"
 logo_dark = "images/common/logo-dark.svg"
 
+# Cloudinary
+cldUrl = "https://res.cloudinary.com/dmyfk6lqa/image/upload/"
+cldTransform = "c_fill,g_auto,q_auto,dpr_auto/f_auto"
+cldName = "dmyfk6lqa"
+
 # Top Header
 top_header = true
 
@@ -133,6 +138,15 @@ map_marker = "images/common/marker.png" # marker size 200*300 px
 [params.preloader]
 enable = false
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
+
+# Cloudinary Breakpoints - Also defined in breakpoints.scss to use in css
+[params.breakpoints]
+xs = 576
+sm = 768
+md = 992
+lg = 1200
+xl = 1440
+xxl = 1920
 
 # Subscription
 # [params.subscription]

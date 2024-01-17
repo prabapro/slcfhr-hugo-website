@@ -1,15 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-{{- partial "head.html" . -}}
+  {{- partial "head.html" . -}}
 
-<body>
-	{{- partial "preloader.html" . -}}
-	{{- partial "header.html" . -}}
-	{{ if not .IsHome }}
-	{{ partial "page-header.html" . }}
-	{{ end }}
-	{{- block "main" . }}{{- end }}
-	{{- partial "footer.html" . -}}
-</body>
 
+  <body>
+    {{- partial "preloader.html" . -}}
+    {{- partial "header.html" . -}}
+    {{ if not .IsHome }}
+      {{ partial "page-header.html" . }}
+    {{ end }}
+    {{- block "main" . }}{{- end }}
+    {{- partial "footer.html" . -}}
+
+
+    <!-- sets optimal width for assets with cld-responsive class -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.13.0/cloudinary-core-shrinkwrap.min.js"></script>
+    <script>
+      var cl = cloudinary.Cloudinary.new({ cloud_name: "{{ site.Params.cldName }}" });
+      cl.config({
+        responsive_use_breakpoints: "true",
+      });
+      cl.responsive();
+    </script>
+  </body>
 </html>

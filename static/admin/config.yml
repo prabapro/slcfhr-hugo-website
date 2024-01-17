@@ -10,6 +10,11 @@ site_url: "https://slcfhr.nfapps.prabapro.me"
 publish_mode: editorial_workflow
 media_folder: static/images/blog
 public_folder: /images/blog
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dmyfk6lqa
+    api_key: 358187824381545
 show_preview_links: true
 
 collections:
@@ -126,6 +131,8 @@ collections:
     label: Notice
     folder: content/english/notice
     create: true
+    media_folder: ../../../static/images/notice
+    public_folder: /images/notice
 
     fields:
       - label: Type
@@ -144,3 +151,12 @@ collections:
       - label: Body
         name: body
         widget: markdown
+
+      - label: gallery
+        name: gallery_folder
+        widget: image
+        media_library:
+          name: cloudinary
+          config:
+            cloud_name: dmyfk6lqa
+            api_key: 358187824381545
