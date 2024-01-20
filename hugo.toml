@@ -109,7 +109,7 @@ address = "336/1 Kelanitissa Mawatha<br>Wanawanasala, Kelaniya<br>Sri Lanka 1160
 mobile = "+94 766 266 332"
 call = "+94766266332"
 whatsapp = "94766266332"
-email = "donate@lakxmirehab.org"
+email = "support@slcfhr.org"
 map_location = "https://maps.app.goo.gl/V8WJndskCJixqWd97"
 
 # Bank Details
@@ -144,23 +144,18 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 # Cookies
 [params.cookies]
-enable = true
-expire_days = 2
+enable = false
+expire_days = 365
   
 ############################# social site ########################
 [[params.social]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+title = "youtube"
+icon = "ti-youtube" # themify icon : https://themify.me/themify-icons
 link = "#"
 
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
 link = "#"
 
 
@@ -209,21 +204,6 @@ weight = 5
 name = "Donate"
 pageRef = "donate/"
 weight = 6
-
-# [[Languages.en.menu.main]]
-# weight = 6
-# name = "Pages"
-# hasChildren = true
-
-#   [[Languages.en.menu.main]]
-#   parent = "Pages"
-#   name = "team"
-#   pageRef = "team/"
-
-#   [[Languages.en.menu.main]]
-#   parent = "Pages"
-#   name = "notice"
-#   pageRef = "notice/"
 
 # footer menu
 
