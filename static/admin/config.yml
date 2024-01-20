@@ -6,7 +6,9 @@ backend:
   branch: main
   squash_merges: true
 
-site_url: "https://slcfhr.nfapps.prabapro.me"
+site_url: https://slcfhr.org
+display_url: https://slcfhr.org
+logo_url: https://slcfhr.org/images/common/logo-primary.svg
 publish_mode: editorial_workflow
 media_folder: static/images/blog
 public_folder: /images/blog
