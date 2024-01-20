@@ -2,7 +2,7 @@
 # Docs: https://docs.gethugothemes.com/educenter/
 
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://slcfhr.org/"
 title = "SLCFHR - Helping the helpless!"
 theme = "codechilli-slcfhr"
 timeZone = "Asia/Colombo"
