@@ -11,3 +11,8 @@ body {
   line-height: 1.5em;
   color: gray;
 }
+
+/* Fix Netlify CMS cursor jump issue in Chrome/Edge (see https://github.com/netlify/netlify-cms/issues/5092). */
+[data-slate-editor] {
+  -webkit-user-modify: read-write !important;
+}
