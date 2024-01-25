@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>🚀 Launching...</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:900"
+      rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Raleway", sans-serif;
+        background-color: white;
+      }
+
+      .text-container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn {
+        display: block;
+        position: absolute;
+        margin-top: 10em;
+        width: 200px;
+        padding: 10px 20px;
+        font-family: "Roboto";
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: large;
+      }
+
+      .gradient {
+        margin: 0;
+        font-size: 250px;
+        color: rgba(225, 225, 225, 0.01);
+        background-image: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        animation: animate 15s ease-in-out infinite;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+
+      @keyframes animate {
+        0%,
+        100% {
+          background-position: left top;
+        }
+        25% {
+          background-position: right bottom;
+        }
+        50% {
+          background-position: left bottom;
+        }
+        75% {
+          background-position: right top;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-container">
+      <div id="site-name">
+        <h1 class="gradient">slcfhr.org</h1>
+      </div>
+      <div class="btn">
+        <button
+          id="launchButton"
+          class="btn btn-primary"
+          onclick="startLaunch()">
+          🚀 Launch
+        </button>
+      </div>
+
+      <div id="countdown" class="gradient" style="display: none">3</div>
+    </div>
+
+    <script>
+      function startLaunch() {
+        // Hide the countdown
+        document.getElementById("countdown").style.display = "block";
+
+        // Hide the launch button
+        document.getElementById("launchButton").style.display = "none";
+
+        // Hide the title
+        document.getElementById("site-name").style.display = "none";
+
+        // Show the countdown
+        document.getElementById("countdown").style.display = "block";
+
+        // Start the countdown animation
+        countdownAnimation(3);
+      }
+
+      function countdownAnimation(count) {
+        if (count > 0) {
+          document.getElementById("countdown").innerText = count;
+          setTimeout(function () {
+            countdownAnimation(count - 1);
+          }, 2000);
+        } else {
+          // Hide the countdown
+          document.getElementById("countdown").style.display = "none";
+
+          // Redirect to the home page after the animation
+          setTimeout(function () {
+            window.location.href = "/"; // Change 'home.html' to your actual home page URL
+          }, 100);
+        }
+      }
+    </script>
+  </body>
+</html>
