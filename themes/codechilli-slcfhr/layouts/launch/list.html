@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>🚀 Launching...</title>
+
+    {{ "<!-- plugins -->" | safeHTML }}
+    {{ range site.Params.plugins.css }}
+      <link rel="stylesheet" href="{{ .link | absURL }}" />
+    {{ end }}
+
+    {{ "<!-- Main Stylesheet -->" | safeHTML }}
+    {{ $styles := resources.Get "scss/main.scss" | toCSS | fingerprint "sha512" }}
+    <link
+      rel="stylesheet"
+      href="{{ $styles.Permalink }}"
+      integrity="{{ $styles.Data.Integrity }}"
+      media="screen" />
+
+    {{ "<!--Favicon-->" | safeHTML }}
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ `images/favicon/apple-touch-icon.png` | absURL }}" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ `images/favicon/favicon-32x32.png` | absURL }}" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ `images/favicon/favicon-16x16.png` | absURL }}" />
+    <link
+      rel="manifest"
+      href="{{ `images/favicon/site.webmanifest` | absURL }}" />
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .launch-button {
+        font-size: 3em;
+        padding: 0.5em 3em;
+      }
+
+      h1 {
+        font-size: 20rem;
+        color: rgba(225, 225, 225, 0.01);
+      }
+
+      .countdown-text {
+        font-size: 60rem;
+      }
+
+      .gradient {
+        background-image: url("/images/launch/launch-gradient.jpg");
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        animation: animate 150s ease-in-out infinite;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+
+      @keyframes animate {
+        0%,
+        100% {
+          background-position: right top;
+        }
+        25% {
+          background-position: right bottom;
+        }
+        50% {
+          background-position: left top;
+        }
+        75% {
+          background-position: right bottom;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg text-center text-uppercase">
+          <h1 class="gradient" id="site-name">slcfhr.org</h1>
+          <h1
+            class="gradient countdown-text"
+            id="countdown"
+            style="display: none">
+            5
+          </h1>
+          <button
+            class="btn btn-primary mt-3 launch-button"
+            id="launchButton"
+            onclick="startLaunch()">
+            🚀 launch
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function startLaunch() {
+        // Hide the launch button & Site Name
+        document.getElementById("site-name").style.display = "none";
+        document.getElementById("launchButton").style.display = "none";
+
+        // Show the countdown
+        document.getElementById("countdown").style.display = "block";
+
+        // Start the countdown animation
+        countdownAnimation(5);
+      }
+
+      function countdownAnimation(count) {
+        if (count > 0) {
+          document.getElementById("countdown").innerText = count;
+          setTimeout(function () {
+            countdownAnimation(count - 1);
+          }, 2000);
+        } else {
+          // Display "Go..." before redirecting
+          document.getElementById("countdown").innerText = "GO!";
+
+          // Redirect to the home page after the animation
+          setTimeout(function () {
+            window.location.href = "/"; // Change 'home.html' to your actual home page URL
+          }, 2000); // Adjust the delay if needed
+        }
+      }
+    </script>
+  </body>
+</html>

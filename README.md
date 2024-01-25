@@ -19,7 +19,7 @@ A Jamstack website for Siri Lakxmi Center For Human Rehabilitation (**SLCFHR**).
 Run the following command to start the local server:
 
 ```shell
-open -a 'Google Chrome Canary.app' --args --auto-open-devtools-for-tabs --user-data-dir='/Users/codechilli/Library/Application Support/Google/Chrome Canary/Default' http://localhost:1313/ && hugo server -D --disableFastRender --ignoreCache
+open -a 'Google Chrome Canary.app' http://localhost:1313/ && hugo server -D --disableFastRender --ignoreCache
 ```
 
 Alternatively, you can use the following ZSH alias:
