@@ -1,7 +1,7 @@
 ################################# Slider #####################################
 slider:
   enable : true
-  bg_image : "images/hero/hero-bg-temp.jpg"
+  bg_image : "images/homepage/hero-bg.jpg"
   slider_item:
     # slider item loop
     - title : "Join us in helping the helpless thrive"
@@ -40,7 +40,7 @@ slider:
 ############################### Vision/Mission Statement ###############################
 banner_feature:
   enable : true
-  image : "images/hero/hero-vector.svg"
+  image : "images/homepage/hero-vector.svg"
   feature_item:
     # Vision Statement
     - name : "Our Vision"
@@ -57,7 +57,7 @@ banner_feature:
 about:
   enable : true
   title : "About SLCFHR"
-  image : "images/about/dr-shiva-temp.jpg"
+  image : "images/homepage/hp-dr-shiva.jpg"
   content : "<p>SLCFHR is devoted to providing compassionate care to the underprivileged sectors of Sri Lankan society, addressing a spectrum of health challenges such as partial paralysis, facial palsy, Parkinson's disease, joint pains, arthritis, autism, and cerebral palsy in children.</p>
 
   <p>The founder of SLCFHR, <strong>Dr. P. Shivapadasundaram</strong>, affectionately known as Dr. Shiva, plays a crucial role in providing unwavering support to patients, extending his services to extremely poor senior citizens and children by offering free medicine and food. The clinic upholds a commitment to nondiscrimination, ensuring that individuals seeking treatment, regardless of age, religion, race, caste, or creed, receive comprehensive care.</p>"
@@ -69,7 +69,7 @@ about:
 ######################## Success story #############################
 success_story:
   enable : true
-  bg_image : "images/backgrounds/hp-video-section-bg-team.jpg"
+  bg_image : "images/homepage/hp-video-section-bg-team.jpg"
   video_link : "https://youtu.be/ITbIUyfY1fY"
 
 ########################## Call to action ############################
