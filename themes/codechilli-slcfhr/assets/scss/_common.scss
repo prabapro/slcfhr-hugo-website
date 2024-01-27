@@ -438,10 +438,15 @@ textarea.form-control {
 
 .donate-button {
   a {
-    color: $secondary-color !important;
-    background-color: #85ffbd;
-    background-image: linear-gradient(-45deg, #85ffbd 0%, #fffb7d 100%);
-
+    color: black !important;
+    font-weight: bold !important;
+    background-color: #c2eaba;
+    background-image: linear-gradient(
+      319deg,
+      #c2eaba 0%,
+      #c5f4e0 37%,
+      #efc2cf 100%
+    );
     padding-right: 35px !important;
     padding-left: 35px !important;
     padding-top: 15px !important;
@@ -457,7 +462,12 @@ textarea.form-control {
   }
 
   a:hover {
-    background-image: linear-gradient(180deg, #dfefa7 0%, #fffb7d 100%);
+    background-image: linear-gradient(
+      219deg,
+      #c2eaba 40%,
+      #c5f4e0 67%,
+      #efc2cf 100%
+    );
   }
 }
 

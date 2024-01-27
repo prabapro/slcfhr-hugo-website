@@ -201,7 +201,7 @@ pageRef = "contact/"
 weight = 5
 
 [[Languages.en.menu.main]]
-name = "Donate"
+name = "Donate Now"
 pageRef = "donate/"
 weight = 6
 
