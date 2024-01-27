@@ -209,15 +209,15 @@ weight = 6
 
 [[Languages.en.menu.footer]]
 name = "Privacy Policy"
-pageRef = "privacy-plocy/"
+pageRef = "privacy-policy/"
 
 [[Languages.en.menu.footer]]
 name = "Terms & Conditions"
 pageRef = "terms/"
 
 [[Languages.en.menu.footer]]
-name = "Media Releases"
-pageRef = "media/"
+name = "Press Coverage"
+pageRef = "press-coverage/"
 
 [[Languages.en.menu.footer]]
 name = "Notice Board"

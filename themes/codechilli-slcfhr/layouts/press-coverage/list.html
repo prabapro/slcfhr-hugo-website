@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <!-- notice -->
+  <!-- press-coverage -->
   <section class="section">
     <div class="container">
       <div class="row">
@@ -9,7 +9,7 @@
               {{ partial "under-construction.html" }}
             {{ else }}
               {{ range .Data.Pages }}
-                {{ .Render "notice" }}
+                {{ .Render "press-coverage" }}
               {{ end }}
             {{ end }}
           </ul>
@@ -17,5 +17,5 @@
       </div>
     </div>
   </section>
-  <!-- /notice -->
+  <!-- /press-coverage -->
 {{ end }}
