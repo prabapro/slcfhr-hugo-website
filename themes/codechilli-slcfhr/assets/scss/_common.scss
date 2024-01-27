@@ -473,15 +473,20 @@ textarea.form-control {
   }
 }
 
-.bank-details span {
-  font-size: 14px;
-  text-wrap: wrap;
-  text-align: right;
-  font-weight: normal;
-  color: $primary-color;
-  text-transform: uppercase;
+.bank-details {
+  li {
+    background-color: rgba(255, 250, 216, 0.317);
+    font-weight: bold;
+  }
+  span {
+    font-size: 14px;
+    text-wrap: wrap;
+    text-align: right;
+    font-weight: normal;
+    color: $primary-color;
+    text-transform: uppercase;
+  }
 }
-
 /*======================
     404 page
 =======================*/

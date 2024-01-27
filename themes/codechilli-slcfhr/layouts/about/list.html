@@ -7,40 +7,47 @@
     <div class="container">
       <div class="row">
         <div class="col-12  content-body">
+          <img
+            class="img-fluid rounded-lg shadow-lg mb-5"
+            src="{{ .Params.image }}"
+            alt="{{ .Title }}" />
           {{ .Content }}
+          <div class="text-center">
+            <a
+              href="{{ .Params.button_link }}"
+              class="btn btn-primary mt-5 text-uppercase font-weight-bold">
+              {{ .Params.button_text }}
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- /about -->
 
-  {{ if $data.homepage.blog.enable }}
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">The Team</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <!-- Team -->
-          {{ $teamPages := slice }}
-          {{ range site.RegularPages }}
-            {{ if eq .Type "team" }}
-              {{ $teamPages = $teamPages | append . }}
-            {{ end }}
-          {{ end }}
-          {{ $sortedTeamPages := sort $teamPages "Params.Order" }}
-          {{ range first 3 $sortedTeamPages }}
-            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-              {{ .Render "team" }}
-            </div>
-          {{ end }}
+  <!-- Team -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="section-title">Our Team</h2>
         </div>
       </div>
-    </section>
-  {{ end }}
-
-
+      <div class="row justify-content-center">
+        {{ $teamPages := slice }}
+        {{ range site.RegularPages }}
+          {{ if eq .Type "team" }}
+            {{ $teamPages = $teamPages | append . }}
+          {{ end }}
+        {{ end }}
+        {{ $sortedTeamPages := sort $teamPages "Params.Order" }}
+        {{ range $sortedTeamPages }}
+          <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+            {{ .Render "team" }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
   <!-- /Team -->
 {{ end }}

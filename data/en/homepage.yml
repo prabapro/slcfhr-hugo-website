@@ -70,7 +70,7 @@ about:
 success_story:
   enable : true
   bg_image : "images/homepage/hp-video-section-bg-team.jpg"
-  video_link : "https://youtu.be/ITbIUyfY1fY"
+  video_link : "https://www.youtube.com/embed/ITbIUyfY1fY"
 
 ########################## Call to action ############################
 cta:
