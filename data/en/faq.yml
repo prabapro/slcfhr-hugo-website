@@ -6,56 +6,36 @@
 
 # 2
 - question: How can I donate to SLCFHR?
-  answer: You can donate to SLCFHR by visiting our website's donation page and choosing your preferred payment method.
+  answer: You can donate to SLCFHR by visiting our website's <a href="/donation" class="font-weight-bold text-primary">donation</a> page and choosing your preferred payment method.
 
 # 3
-- question: What types of projects does SLCFHR support?
-  answer: SLCFHR supports a variety of projects including education initiatives, healthcare programs, and disaster relief efforts.
+- question: Can I volunteer for SLCFHR?
+  answer: Yes, we welcome volunteers! Please contact us <a href="/contact" class="font-weight-bold text-primary">here</a>.
 
 # 4
-- question: Can I volunteer for SLCFHR?
-  answer: Yes, we welcome volunteers! Visit our volunteer page to learn about opportunities and how you can contribute your time and skills.
-
-# 5
 - question: Where does the money donated to SLCFHR go?
   answer: All donations to SLCFHR go directly to funding our humanitarian projects and supporting those in need.
 
-# 6
+# 5
 - question: How can I stay updated on SLCFHR's activities?
   answer: Stay connected by subscribing to our newsletter or following us on social media for regular updates on our projects and events.
 
-# 7
-- question: Does SLCFHR provide assistance to individuals in specific regions?
-  answer: Yes, SLCFHR focuses on providing assistance to individuals in regions affected by poverty, conflict, and natural disasters.
-
-# 8
+# 6
 - question: Are donations to SLCFHR tax-deductible?
   answer: Yes, donations to SLCFHR are tax-deductible. We provide receipts for all contributions to facilitate the tax process.
 
-# 9
+# 7
 - question: How does SLCFHR ensure transparency in its operations?
   answer: SLCFHR is committed to transparency. We regularly publish financial reports and updates on our website, allowing donors to track how their contributions are utilized.
 
-# 10
+# 8
 - question: Can I sponsor a specific project with SLCFHR?
   answer: Yes, you can sponsor a specific project. Visit our sponsorship page to learn about ongoing projects and how you can make a targeted impact.
 
-# 11
+# 9
 - question: Does SLCFHR collaborate with other organizations?
   answer: Yes, SLCFHR actively collaborates with other humanitarian organizations to maximize the impact of our collective efforts.
 
-# 12
-- question: How does SLCFHR support education initiatives?
-  answer: SLCFHR supports education by building schools, providing scholarships, and implementing programs to enhance access to quality education in underserved communities.
-
-# 13
-- question: Can I organize a fundraising event for SLCFHR?
-  answer: Absolutely! We encourage individuals and groups to organize fundraising events. Contact us for guidance and support in planning your event.
-
-# 14
-- question: How does SLCFHR prioritize its relief efforts during natural disasters?
-  answer: SLCFHR prioritizes relief efforts based on the severity of the situation, immediate needs, and collaboration with local authorities to ensure an effective response.
-
-# 15
+# 10
 - question: Does SLCFHR offer support for long-term community development?
   answer: Yes, SLCFHR is dedicated to long-term community development. We implement sustainable projects that empower communities to thrive independently over time.
