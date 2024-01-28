@@ -238,7 +238,9 @@ a h4 {
 }
 
 .gradient-heading {
+  font-size: 3.2em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
   color: transparent;
   background-size: cover;
   background: linear-gradient(to top left, #f093fb, #f5576c);
