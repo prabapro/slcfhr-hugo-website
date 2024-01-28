@@ -3,7 +3,7 @@ title: "Workshop: How to Use Social Media Safely"
 publishDate: "2024-01-28T08:56:50+05:30" #Published Date
 date: "2024-03-02T15:00:50+05:30" #Event Date
 type: "event"
-image: "images/events/how-to-use-social-media-safely-workshop/workshop-social-media-safety.jpg"
+image: "images/events/workshop-social-media-safety.jpg"
 author: "Praba"
 description: "A workshop on teaching how to use social media safely"
 location: "SLCFHR, Kelaniya"

@@ -186,23 +186,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row justify-content-center">
-          {{ range first 3 (sort (where site.RegularPages "Type" "event") "Date") }}
-          <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-            {{ .Render "event" }}
-          </div>
-        {{ end }}
-        
-        
-        
-        
-        
-        
-        
-        
-
-        </div> -->
-
         <div class="row justify-content-center">
           {{ $upcomingEvents := where (where site.RegularPages "Type" "event") "Date" "ge" now }}
           {{ $sortedEvents := sort $upcomingEvents "Date" }}
