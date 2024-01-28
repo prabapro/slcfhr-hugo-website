@@ -65,7 +65,7 @@
         <div class="row">
           {{ with .Params.gallery_folder }}
             {{ $galleryPath := . }}
-            {{ $allowedExtensions := slice "jpg" "jpeg" "png" }}
+            {{ $allowedExtensions := slice "jpg" "jpeg" "png" "JPG" "JPEG" "PNG" }}
             {{ $images := readDir (printf "static/%s" $galleryPath) }}
             {{ range $images }}
             {{ $extension := index (split .Name ".") (sub (len (split .Name ".")) 1) }}
