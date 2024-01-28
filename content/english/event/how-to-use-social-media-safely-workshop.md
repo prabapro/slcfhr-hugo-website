@@ -9,7 +9,7 @@ description: "A workshop on teaching how to use social media safely"
 location: "SLCFHR, Kelaniya"
 event_gallery: false
 gallery_folder: "images/events/how-to-use-social-media-safely-workshop" #Create the folder manually & upload images (Allowed extensions: JPG, JPEG & PNG)
-draft: true
+draft: false
 ---
 
 ### About Event

@@ -9,7 +9,7 @@ description: "We are launching our official website today"
 location: "Urban Council Hall, Wattala"
 event_gallery: false
 gallery_folder: "images/events/slcfhr-official-website-launch" #Create the folder manually & upload images (Allowed extensions: JPG, JPEG & PNG)
-draft: true
+draft: false
 ---
 
 ### About Event

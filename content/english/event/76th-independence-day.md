@@ -9,5 +9,5 @@ description: "Let's celebrate our 76th independence day"
 location: "SLCFHR, Kelaniya"
 event_gallery: false
 gallery_folder: "images/events/76th-independence-day" #Create the folder manually & upload images (Allowed extensions: JPG, JPEG & PNG)
-draft: true
+draft: false
 ---

@@ -9,5 +9,5 @@ description: "We celebrated our Christmas ceremony"
 location: "SLCFHR, Kelaniya"
 event_gallery: true
 gallery_folder: "images/events/2023-christmas-celebrations" #Create the folder manually & upload images (Allowed extensions: JPG, JPEG & PNG)
-draft: true
+draft: false
 ---
