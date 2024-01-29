@@ -4,7 +4,7 @@ publishDate: "2024-01-28T08:56:50+05:30" #Published Date
 date: "2024-03-02T15:00:50+05:30" #Event Date
 type: "event"
 image: "images/events/workshop-social-media-safety.jpg"
-author: "Praba"
+author: "Praba Ponnambalam"
 description: "A workshop on teaching how to use social media safely"
 location: "SLCFHR, Kelaniya"
 event_gallery: false

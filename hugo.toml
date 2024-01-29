@@ -92,10 +92,13 @@ link = "plugins/filterizr/jquery.filterizr.min.js"
 link = "plugins/google-map/gmap.js"
 
 
+[Author]
+  name = "Praba Ponnambalam"
 #################### Default Parameters ################################
 [params]
 logo_light = "images/common/logo-light.svg"
 logo_dark = "images/common/logo-dark.svg"
+logo = "/images/favicon/favicon-32x32.png"
 
 # Top Header
 top_header = true

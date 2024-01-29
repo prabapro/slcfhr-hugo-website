@@ -3,7 +3,7 @@ title: "SLCFHR - A Haven of Hope"
 date: "2024-01-28T10:11:24+05:30"
 type: "post"
 image: "images/blog/slcfhr-a-haven-of-hope.jpg"
-author: "Praba"
+author: "Praba Ponnambalam"
 categories: ["Community Impact", "Healthcare Initiatives", "Hope and Healing"]
 tags: []
 draft: false

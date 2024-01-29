@@ -8,7 +8,7 @@ A Jamstack website for Siri Lakxmi Center For Human Rehabilitation (**SLCFHR**).
 
 - **SSG:** [Hugo](https://gohugo.io/)
 - **CMS:** [Decap CMS](https://decapcms.org/) (Formerly "Netlify CMS")
-- **Deployed on:** [Netlify](https://slcfhr.nfapps.prabapro.me)
+- **Deployed on:** [Netlify](https://slcfhr.nfapps.Praba Ponnambalampro.me)
 
 </div>
 
@@ -65,8 +65,8 @@ The Decap CMS allows users to add, edit, and delete blogs, events, and notices w
 ### Usage Steps:
 
 1. Invite a user using Netlify Identity (Limit: 5 users).
-1. Login to `https://slcfhr.nfapps.prabapro.me/admin` using the provided credentials.
-1. After making changes and publishing, Decap CMS will automatically generate a Pull Request and delete the branch - [Example](https://github.com/prabapro/slcfhr-hugo-website/pull/2).
+1. Login to `https://slcfhr.nfapps.Praba Ponnambalampro.me/admin` using the provided credentials.
+1. After making changes and publishing, Decap CMS will automatically generate a Pull Request and delete the branch - [Example](https://github.com/Praba Ponnambalampro/slcfhr-hugo-website/pull/2).
 1. Run `git pull` on the local repository to sync changes.
 
 ### Running Decap Server Locally
@@ -84,7 +84,7 @@ npx decap-server
 
 ## ![Netlify Logo](https://avatars.githubusercontent.com/in/13473?s=24) Netlify Deployment
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ff2f1835-13ac-4522-bed8-85cafc34a31e/deploy-status)](https://app.netlify.com/sites/praba-slcfhr/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff2f1835-13ac-4522-bed8-85cafc34a31e/deploy-status)](https://app.netlify.com/sites/Praba Ponnambalam-slcfhr/deploys)
 
 Netlify automatically monitors the GitHub repository for changes in the `main` branch. Upon detection of changes, Netlify initiates the build process and publishes updates instantly.
 

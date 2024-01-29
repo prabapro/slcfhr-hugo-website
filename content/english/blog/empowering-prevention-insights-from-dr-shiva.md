@@ -3,7 +3,7 @@ title: "Empowering Prevention Insights From Dr Shiva"
 date: "2024-01-28T10:08:45+05:30"
 type: "post"
 image: "images/blog/empowering-prevention-insights-from-dr-shiva.jpg"
-author: "Praba"
+author: "Praba Ponnambalam"
 categories: ["health-and-wellness", "preventive-measures", "holistic-health"]
 tags: []
 draft: false

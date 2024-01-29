@@ -3,7 +3,7 @@ title: "Transformative Stories: Journey to Recovery at Siri Lakxmi Center for Hu
 date: "2024-01-28T10:03:40+05:30"
 type: "post"
 image: "images/blog/transformative-stories-journey-to-recovery-at-siri-lakxmi-center-for-human-rehabilitation.jpg"
-author: "Praba"
+author: "Praba Ponnambalam"
 categories:
   [
     "Health and Wellness",
