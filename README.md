@@ -8,7 +8,7 @@ A Jamstack website for Siri Lakxmi Center For Human Rehabilitation (**SLCFHR**).
 
 - **SSG:** [Hugo](https://gohugo.io/)
 - **CMS:** [Decap CMS](https://decapcms.org/) (Formerly "Netlify CMS")
-- **Deployed on:** [Netlify](https://slcfhr.nfapps.Praba Ponnambalampro.me)
+- **Deployed on:** [Netlify](https://www.netlify.com/)
 
 </div>
 
@@ -65,8 +65,8 @@ The Decap CMS allows users to add, edit, and delete blogs, events, and notices w
 ### Usage Steps:
 
 1. Invite a user using Netlify Identity (Limit: 5 users).
-1. Login to `https://slcfhr.nfapps.Praba Ponnambalampro.me/admin` using the provided credentials.
-1. After making changes and publishing, Decap CMS will automatically generate a Pull Request and delete the branch - [Example](https://github.com/Praba Ponnambalampro/slcfhr-hugo-website/pull/2).
+1. Login to `https://slcfhr.org/admin` using the provided credentials.
+1. After making changes and publishing, Decap CMS will automatically generate a Pull Request and delete the branch - [Example](https://github.com/prabapro/slcfhr-hugo-website/pull/2).
 1. Run `git pull` on the local repository to sync changes.
 
 ### Running Decap Server Locally
