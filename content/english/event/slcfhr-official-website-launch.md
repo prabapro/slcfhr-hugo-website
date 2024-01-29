@@ -1,7 +1,7 @@
 ---
 title: "SLCFHR Official Website Launch"
 publishDate: "2024-01-28T08:20:16+05:30" #Published Date
-date: "2024-01-28T23:59:16+05:30" #Event Date
+date: "2024-01-28T18:00:00+05:30" #Event Date
 type: "event"
 image: "images/events/_placeholder_logo.png"
 author: "Praba"

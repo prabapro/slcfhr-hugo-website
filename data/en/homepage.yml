@@ -85,7 +85,7 @@ cta:
 ############################# Events ################################
 event:
   enable : true
-  title : "Upcoming Events"
+  title : "Recent Events"
   # event item comes from "content/**/event" folder.
 
 ############################# Blog ################################
