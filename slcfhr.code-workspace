@@ -22,8 +22,10 @@
           },
           {
             "name": "Git",
-            "commands": ["git status"],
-            "shouldRunCommands": false
+            "commands": [
+              "git ssb # https://github.com/GitAlias/gitalias/blob/main/README.md for aliases"
+            ],
+            "shouldRunCommands": true
           }
         ]
       }
