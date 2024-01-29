@@ -23,7 +23,7 @@
           {
             "name": "Git",
             "commands": [
-              "git ssb # https://github.com/GitAlias/gitalias/blob/main/README.md for aliases"
+              "git s # https://github.com/GitAlias/gitalias/blob/main/README.md for aliases"
             ],
             "shouldRunCommands": true
           }
