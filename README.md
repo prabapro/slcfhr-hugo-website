@@ -84,7 +84,7 @@ npx decap-server
 
 ## ![Netlify Logo](https://avatars.githubusercontent.com/in/13473?s=24) Netlify Deployment
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ff2f1835-13ac-4522-bed8-85cafc34a31e/deploy-status)](https://app.netlify.com/sites/Praba Ponnambalam-slcfhr/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff2f1835-13ac-4522-bed8-85cafc34a31e/deploy-status)](https://app.netlify.com/sites/praba-slcfhr/deploys)
 
 Netlify automatically monitors the GitHub repository for changes in the `main` branch. Upon detection of changes, Netlify initiates the build process and publishes updates instantly.
 
