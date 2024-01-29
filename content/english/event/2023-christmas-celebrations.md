@@ -4,7 +4,7 @@ publishDate: "2023-12-22T18:00:00+05:30" #Published Date
 date: "2023-12-22T18:00:00+05:30" #Event Date
 type: "event"
 image: "images/events/2023-christmas-celebrations/01.jpg"
-author: "Praba"
+author: "Praba Ponnambalam"
 description: "We celebrated our Christmas ceremony"
 location: "SLCFHR, Kelaniya"
 event_gallery: true

@@ -57,6 +57,9 @@
     rel="manifest"
     href="{{ `images/favicon/site.webmanifest` | absURL }}" />
 
+  <!-- Structured Markup JSON-LD -->
+  {{ partial "site_schema.html" . }}
+
   {{ "<!-- Google Analytics -->" | safeHTML }}
   {{ template "_internal/google_analytics.html" . }}
 
