@@ -127,7 +127,6 @@ bank_country = "Sri Lanka"
 # Google Maps
 [params.map]
 enable = true
-gmap_api = "AIzaSyD3Kp0KhTjg6jvuM1LOCZ18S7Z05WWK8TM" #6.979777816573666, 79.89603197786164
 map_latitude = "6.979777816573666"
 map_longitude = "79.89603197786164"
 map_marker = "images/common/marker.png" # marker size 200*300 px

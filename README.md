@@ -16,17 +16,23 @@ A Jamstack website for Siri Lakxmi Center For Human Rehabilitation (**SLCFHR**).
 
 ### Local Server
 
-Run the following command to start the local server:
+1. Rename the `.env_example` file to `.env` and update the `HUGO_GOOGLE_MAPS_API` key within the file.
+2. Execute the following command to launch the local server:
 
 ```shell
-open -a 'Google Chrome Canary.app' http://localhost:1313/ && hugo server -D --disableFastRender --ignoreCache
+open -a 'Google Chrome Canary.app' http://localhost:1313/ && export $(grep -v '^#' .env | xargs) && hugo server -D --disableFastRender --ignoreCache
 ```
 
-Alternatively, you can use the following ZSH alias:
+#### Alternatively, you can set an alias using below steps;
+
+1. Edit your ZSH config using `nano ~/.zshrc`
+2. Add below to the ZSH config & run `source ~/.zshrc`
 
 ```shell
-hugo-serve
+alias hugo-serve='open -a "Google Chrome Canary.app" http://localhost:1313/ && export $(grep -v "^#" .env | xargs) && hugo server -D --disableFastRender --ignoreCache'
 ```
+
+3. Restart the terminal & start using the alias `hugo serve`
 
 ### Local Build
 
