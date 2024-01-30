@@ -14,10 +14,17 @@ A Jamstack website for Siri Lakxmi Center For Human Rehabilitation (**SLCFHR**).
 
 ## 👨‍💻 Development Environment
 
+### Environment Variables
+
+- Rename the `.env.example` file to `.env` and update the `HUGO_GOOGLE_MAPS_API` key within the file.
+- If multiple entries are added to the `.env` file, run below command to update the template with new keys.
+  ```shell
+  sed 's/=.*/=/' .env > .env.example
+  ```
+
 ### Local Server
 
-1. Rename the `.env_example` file to `.env` and update the `HUGO_GOOGLE_MAPS_API` key within the file.
-2. Execute the following command to launch the local server:
+Execute the following command to launch the local server:
 
 ```shell
 open -a 'Google Chrome Canary.app' http://localhost:1313/ && export $(grep -v '^#' .env | xargs) && hugo server -D --disableFastRender --ignoreCache
