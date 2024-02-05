@@ -188,11 +188,27 @@
   }}
     <script src="{{ .link | absURL }}"></script>
   {{ end }}
+
   {{ "<!-- Main Script -->" | safeHTML }}
   {{ $script := resources.Get
     "js/script.js" | minify
   }}
   <script src="{{ $script.Permalink }}"></script>
+
+  <!-- Payhere SDK -->
+  {{ if .Params.enable_payhere }}
+    {{ "<!-- PayHere SDK -->" | safeHTML }}
+    <script
+      type="text/javascript"
+      src="https://www.payhere.lk/lib/payhere.js"></script>
+
+    {{ "<!-- Payment Handler -->" | safeHTML }}
+    {{ $script := resources.Get
+      "js/paymentHandler.js" | minify
+    }}
+    <script src="{{ $script.Permalink }}"></script>
+  {{ end }}
+
 
   <!-- cookie -->
   {{ if site.Params.cookies.enable }}
