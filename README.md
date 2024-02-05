@@ -16,8 +16,11 @@ A Jamstack website for Siri Lakxmi Center For Human Rehabilitation (**SLCFHR**).
 
 ### Environment Variables
 
-- Rename the `.env.example` file to `.env` and update the `HUGO_GOOGLE_MAPS_API` key within the file.
-- If multiple entries are added to the `.env` file, run below command to update the template with new keys.
+- Generate `.env` file from `.env.example` and update your env variables.
+  ```shell
+  cp .env.example .env
+  ```
+- If new keys are added to the `.env` file, run below command to update the example file with new keys.
   ```shell
   sed 's/=.*/=/' .env > .env.example
   ```
