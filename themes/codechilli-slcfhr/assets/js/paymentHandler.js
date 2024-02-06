@@ -75,7 +75,7 @@ async function initiatePayment() {
 			//* System Params
 			cancel_url: window.location.origin,
 			notify_url: notifyUrl,
-			return_url: window.location.origin,
+			return_url: window.location.origin + '/donate',
 			sandbox: true,
 
 			//* Payment Params Received from payhereCheckout Netlify Function
