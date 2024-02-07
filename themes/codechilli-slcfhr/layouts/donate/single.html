@@ -5,7 +5,67 @@
   <section class="section">
     <div class="container donation-content-pane">
       <div class="row">
-        <div class="col-lg-7 mb-4 mb-lg-0"></div>
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <!-- Transaction details -->
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col">
+                <img
+                  src="/images/common/payment-gateway/check.png"
+                  alt="success icon"
+                  width="72px" />
+                <h4 class="pt-4">
+                  Thank you,
+                  <span class="customer-first-name"></span>
+                </h4>
+
+                <p class="pt-2">
+                  Order #
+                  <span
+                    class="order-number"
+                    class="badge rounded-pill font-monospace bg-light text-dark fs-6"></span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card mt-4 text-start transaction-details">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <p class="text-muted pt-2 fw-lighter">Your details</p>
+                  <h3>
+                    <span class="customer-name"></span>
+                  </h3>
+                  <p class="mb-1">
+                    <span class="customer-address"></span>
+                  </p>
+                  <p>
+                    <span class="customerEmail"></span>
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p class="text-muted pt-2 fw-lighter">You Paid</p>
+                  <h3><span class="order-amount"></span></h3>
+                  <p class="text-muted pt-2 fw-lighter">For</p>
+                  <h3><span class="order-item"></span></h3>
+                </li>
+                <li class="list-group-item">
+                  <p class="text-muted pt-2 fw-lighter">Paid via</p>
+                  <p>
+                    <span class="payment-method"></span>
+                    <span class="payment-card"></span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <p class="pt-4">
+              We'll email the receipt to
+              <span class="customerEmail"></span>
+              shortly.
+            </p>
+          </div>
+          <!-- /Transaction details -->
+        </div>
 
         <!-- Contact Details -->
         <div class="col-lg-5 mt-5 mt-lg-0 donate-contact-pane">
@@ -28,4 +88,156 @@
     </div>
   </section>
   <!-- /contact -->
+
+  <script>
+    // UNCOMMENT BELOW TO SET DATA INTO SESSION STORAGE FOR DEBUGGING
+    setDummyDataIntoSessionStorage();
+
+    // Retrieve customer data from session storage
+    const ssCustomerOrderData = JSON.parse(
+      sessionStorage.getItem("customerOrderData"),
+    );
+
+    // Retrieve transaction data from session storage
+    const ssTransactionData = JSON.parse(
+      sessionStorage.getItem("transactionData"),
+    );
+
+    // Combine both objects
+    const sessionStorageData = { ...ssCustomerOrderData, ...ssTransactionData };
+
+    // Destructure the combined object with default values
+    const {
+      address = "",
+      amount = "",
+      city = "",
+      country = "",
+      currency = "",
+      delivery_address = "",
+      delivery_city = "",
+      delivery_country = "",
+      email = "",
+      first_name = "",
+      items = "",
+      last_name = "",
+      order_id = "",
+      phone = "",
+      payment_card = "",
+      payment_id = "",
+      payment_method = "",
+      status_message = "",
+    } = sessionStorageData;
+
+    // First Name
+    document.querySelector(".customer-first-name").innerHTML =
+      `${sessionStorageData.first_name}.`;
+
+    // Order ID
+    document.querySelector(".order-number").innerHTML =
+      sessionStorageData.order_id;
+
+    // Customer Full Name
+    document.querySelector(".customer-name").innerHTML =
+      `<strong>${sessionStorageData.first_name} ${sessionStorageData.last_name}</strong>`;
+
+    // Customer Address
+    document.querySelector(".customer-address").innerHTML =
+      `${sessionStorageData.address}, ${sessionStorageData.city}, ${sessionStorageData.country}`;
+
+    // Order Item
+    document.querySelector(".order-item").innerHTML =
+      `${sessionStorageData.items}`;
+
+    // Order Amount (with thousand separator )
+    const amountStr = sessionStorageData.amount;
+    const amountFlt = parseFloat(amountStr);
+    const amountFormatted = amountFlt.toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+    document.querySelector(".order-amount").innerHTML =
+      `<strong>${amountFormatted}</strong> <small>${sessionStorageData.currency}</small>`;
+
+    // Customer Email
+    const customerEmailElements = document.querySelectorAll(".customerEmail");
+    customerEmailElements.forEach((element) => {
+      element.innerHTML = sessionStorageData.email;
+    });
+
+    // Function to get credit card logo HTML
+    const getCreditCardLogoHTML = (cardType) => {
+      switch (cardType) {
+        case "VISA":
+          return `<img src="/images/common/payment-gateway/visa.png" alt="VISA">`;
+        case "MASTER":
+          return `<img src="/images/common/payment-gateway/master.png" alt="MasterCard">`;
+        case "AMEX":
+          return `<img src="/images/common/payment-gateway/amex.png" alt="American Express">`;
+        default:
+          return "";
+      }
+    };
+
+    // Get payment method from sessionStorage
+    const paymentMethod = sessionStorageData.payment_method;
+
+    // Display payment method
+    const paymentMethodElement = document.querySelector(".payment-method");
+
+    // Display credit card logo (if applicable)
+    if (["VISA", "MASTER", "AMEX"].includes(paymentMethod)) {
+      const creditCardLogoHTML = getCreditCardLogoHTML(paymentMethod);
+      // Display only the logo HTML without the payment method string
+      paymentMethodElement.innerHTML = creditCardLogoHTML;
+    } else {
+      // Display the payment method string if it's not VISA, MASTER, or AMEX
+      paymentMethodElement.innerHTML = `<strong>${paymentMethod}</strong>`;
+    }
+
+    // Card Number
+    const cardNum = sessionStorageData.payment_card;
+    const paymentCardElement = document.querySelector(".payment-card");
+    if (cardNum !== "") {
+      paymentCardElement.innerHTML = `ends with ${cardNum}`;
+    } else {
+      paymentCardElement.innerHTML = "";
+    }
+
+    // Function to inject data into session storage for debugging
+    function setDummyDataIntoSessionStorage() {
+      const customerOrderData = {
+        address: "1141 Shady Ln Dr",
+        city: "Bendigo",
+        country: "Australia",
+        delivery_address: "1141 Shady Ln Dr",
+        delivery_city: "Bendigo",
+        delivery_country: "Australia",
+        email: "virgil.crawford@example.com",
+        first_name: "Virgil",
+        items: "BIGDOG141",
+        last_name: "Crawford",
+        order_id: "20240204-072618-7172",
+        phone: "01-6828-9589",
+      };
+
+      const transactionData = {
+        order_id: "20240204-072618-7172",
+        amount: "15352.63",
+        currency: "EUR",
+        payment_card: "1191",
+        payment_id: "320032369262",
+        payment_method: "MASTER",
+        status_message: "Successfully received the MASTER payment",
+      };
+
+      sessionStorage.setItem(
+        "customerOrderData",
+        JSON.stringify(customerOrderData),
+      );
+      sessionStorage.setItem(
+        "transactionData",
+        JSON.stringify(transactionData),
+      );
+    }
+  </script>
 {{ end }}
