@@ -134,7 +134,7 @@ async function initiatePayment() {
 						sessionStorage.setItem('transactionData', transactionData);
 
 						// Redirecting customer to the success page
-						window.location.href = '/success';
+						window.location.href = '/thankyou';
 					} else {
 						console.error('Order ID not found in the database.');
 					}

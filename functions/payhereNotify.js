@@ -19,7 +19,7 @@ const query = faunadb.query;
 // FaunaDB client configuration
 const client = new faunadb.Client({
 	secret: process.env.HUGO_FAUNA_SECRET_KEY,
-	domain: 'db.us.fauna.com', // Replace with your FaunaDB domain
+	domain: 'db.us.fauna.com',
 });
 
 /**
