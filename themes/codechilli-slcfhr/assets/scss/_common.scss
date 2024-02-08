@@ -540,3 +540,40 @@ textarea.form-control {
 .transaction-details img {
   width: 70px;
 }
+
+// Donation Form
+.donation-form {
+  background-color: $light;
+  padding: 3.5em 2em;
+  border-radius: 10px;
+  border-top: 4px solid $donation-green;
+}
+
+.donation-form button {
+  background: linear-gradient(to top left, $donation-green, rgb(3, 116, 3));
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.donation-form-amount {
+  border: 1px solid $donation-green;
+  font-size: 2.5em;
+  padding: 1.4em 0;
+  font-weight: bold;
+  color: $donation-green;
+}
+
+.donation-form-amount:focus::placeholder {
+  color: transparent;
+}
+
+.donation-form-amount::placeholder {
+  color: rgba(128, 128, 128, 0.211);
+}
+
+.currency-dropdown select {
+  background-color: $donation-green;
+  color: white;
+  font-weight: bold;
+  border: 1px solid $donation-green;
+}

@@ -12,8 +12,8 @@
                 href="#online-donation-tab"
                 data-target="#online-donation-tab"
                 data-toggle="tab"
-                class="nav-link active">
-                Donate Online
+                class="nav-link active p-3 text-primary">
+                <strong>Donate Online</strong>
               </a>
             </li>
             <li class="nav-item">
@@ -21,14 +21,12 @@
                 href="#bank-transfer-tab"
                 data-target="#bank-transfer-tab"
                 data-toggle="tab"
-                class="nav-link">
-                Bank Transfer
+                class="nav-link p-3 text-secondary">
+                <strong>Bank Transfer</strong>
               </a>
             </li>
           </ul>
-          <div
-            id="donation-tab-content"
-            class="tab-content p-5 border border-top-0 rounded">
+          <div id="donation-tab-content" class="tab-content pt-4">
             <div id="online-donation-tab" class="tab-pane fade active show">
               <p class="mb-4">
                 {{ safeHTML .Params.online_donation_text }}
