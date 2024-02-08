@@ -1,0 +1,81 @@
+<form class="donation-form text-center">
+  <div class="form-group mt-5 mb-5">
+    <div class="input-group">
+      <input
+        type="text"
+        class="form-control"
+        id="amount"
+        name="amount"
+        placeholder="Enter Amount (Eg: 25.00)" />
+      <div class="input-group-append">
+        <select class="input-group-text p-3" id="currency" name="currency">
+          <option value="USD">USD</option>
+          <option value="LKR">LKR</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="AUD">AUD</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="First Name"
+        id="firstName"
+        required />
+    </div>
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Last Name"
+        id="lastName" />
+    </div>
+  </div>
+
+  <div class="form-group mt-3">
+    <input type="email" class="form-control" id="email" placeholder="Email" />
+  </div>
+
+  <div class="form-group mt-3">
+    <input
+      type="text"
+      class="form-control"
+      id="address"
+      placeholder="Address" />
+  </div>
+
+  <div class="row">
+    <div class="col-md mt-1 mt-lg-0">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="City"
+        id="city"
+        required />
+    </div>
+    <div class="col-md mt-3 mt-lg-0">
+      <input type="text" class="form-control" placeholder="State" id="state" />
+    </div>
+    <div class="col-md mt-3 mt-lg-0">
+      <select class="form-control" id="country" name="country">
+        <option value="USD">USD</option>
+        <option value="LKR">LKR</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+      </select>
+    </div>
+  </div>
+
+  <button
+    class="btn btn-primary mt-5 text-center"
+    type="button"
+    onclick="initiatePayment()">
+    Donate
+  </button>
+</form>

@@ -1,5 +1,79 @@
 console.log('paymentHandler.js is loaded');
 
+// RandomUser.me API to get random user data
+async function fetchData() {
+	try {
+		const response = await fetch('https://randomuser.me/api/?nat=us,gb,au,ca');
+		const data = await response.json();
+		const randomUser = { ...data.results[0] };
+		const {
+			name: { first, last },
+			email,
+			phone,
+			location: { street, city, state, country, postcode },
+			login,
+		} = randomUser;
+
+		const currencies = ['USD', 'LKR', 'EUR', 'GBP', 'AUD'];
+		const randomCurrency = currencies[Math.floor(Math.random() * currencies.length)];
+
+		let minAmount, maxAmount;
+
+		if (randomCurrency === 'LKR') {
+			minAmount = 10000;
+			maxAmount = 50000;
+		} else {
+			minAmount = 10;
+			maxAmount = 120;
+		}
+
+		const randomAmount = (Math.random() * (maxAmount - minAmount) + minAmount).toFixed(2);
+
+		const user = {
+			address: `${street.number} ${street.name}`,
+			amount: randomAmount,
+			city,
+			country,
+			currency: randomCurrency,
+			email,
+			first,
+			item: `${login.username}`.toUpperCase(),
+			last,
+			phone,
+		};
+
+		console.log(user);
+
+		// Set random values to the form fields
+		// Visible Fields
+		document.querySelector('#firstName').value = user.first;
+		document.querySelector('#lastName').value = user.last;
+		document.querySelector('#currency').value = user.currency;
+		document.querySelector('#amount').value = user.amount;
+		// Hidden Fields
+		document.querySelector('#address').value = user.address;
+		document.querySelector('#city').value = user.city;
+		document.querySelector('#country').value = user.country;
+		document.querySelector('#email').value = user.email;
+		document.querySelector('#item').value = user.item;
+		document.querySelector('#phone').value = user.phone;
+	} catch (error) {
+		console.error('Error fetching data:', error);
+	}
+}
+fetchData();
+
+// Allow amount field to enter only numeric with 2 decimals
+document.getElementById('amount').addEventListener('input', function (event) {
+	let inputValue = event.target.value;
+	inputValue = inputValue.replace(/[^\d.]/g, ''); // Remove non-numeric and non-decimal characters
+	const decimalCount = (inputValue.split('.')[1] || []).length;
+	if (decimalCount > 2) {
+		inputValue = inputValue.slice(0, -1); // Allow only two decimal places
+	}
+	event.target.value = inputValue;
+});
+
 /**
  * Initiates the payment process using Payhere.
  * @async
